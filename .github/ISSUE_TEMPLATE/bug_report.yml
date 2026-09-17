@@ -1,0 +1,69 @@
+name: Bug report
+description: Report a reproducible software defect using synthetic or redacted data.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include recordings, transcripts, API keys, device identifiers,
+        account information, production logs, or security vulnerabilities.
+        Report vulnerabilities through private vulnerability reporting, not here.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - iOS app
+        - Python CLI
+        - Local transcription server
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reproducible sequence using synthetic data.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit or release
+      placeholder: Commit SHA or release version
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, hardware/device model, firmware, Python or iOS version, and relevant providers.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs
+      description: Optional. Verify that all sensitive and personal data is removed.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: I removed credentials, recordings, transcripts, device identifiers, and account information.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

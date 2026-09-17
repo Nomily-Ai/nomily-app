@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.pyc
+/audio_clips/
+/config.json
+
+# macOS resource forks (metadata files that rsync/tar drags over from a Mac, not source)
+._*
+.DS_Store
+
+.claude/
+/docs/
+# Internal material at the repository root only. A bare `resources/` would also
+# swallow ios/Sources/Resources/.
+/resources/
+
+# Vendor firmware binaries and confidential protocol material, not published with the source
+/reference/
+
+# Internal development notes (AI guidance), not published with the source
+CLAUDE.md
+
+# Working directories kept locally and not published from this repository.
+# Each app has its own: nomily-ios / nomily-android.
+/ios/
+/android/
+/cli/
+/server/
+/tools/

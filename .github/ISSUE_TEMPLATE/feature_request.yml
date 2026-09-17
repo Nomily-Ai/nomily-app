@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose a focused improvement to the open companion software.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem should be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest useful behavior, not a full implementation plan.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What existing workflow or simpler option did you consider?
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Sensitive impact
+      description: Does this affect a sensitive boundary?
+      options:
+        - No sensitive impact known
+        - Stored data or privacy
+        - Networking or third-party services
+        - Device protocol or firmware compatibility
+        - Cryptography or authentication
+        - Permissions or platform security
+    validations:
+      required: true
