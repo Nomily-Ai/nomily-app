@@ -2,61 +2,67 @@
 
 > Your recordings. Your keys. Your AI.
 
-Companion software for supported Nomily AI recording devices. This repository is
-the project entry point: it describes what Nomily AI is and points to the app
-repositories.
+Nomily is companion software for supported AI recording devices. This repository
+is the public project entry point: use it to understand the project boundary,
+choose a mobile client, and find the applicable licence. The runnable clients
+live in their own repositories.
 
-> **Project status:** private preview and public-release candidate. This is a
-> companion-software project, not a hardware catalogue, firmware release, or
-> product specification.
+## Start here
 
-Most AI recorders ask users to surrender two things at once: their conversations and their choice of intelligence. Nomily AI is our challenge to that default. It is being built around a simpler idea: the person who creates the recording should control where it goes, which AI processes it, and what they pay for.
-
-We are taking the hacker's path: ship a useful tool, expose the seams, let technically curious users inspect it, and improve it through real-world feedback. This is a private preview, not yet a public release or a promise that every component will be opened unchanged.
-
-## Repositories
-
-| Repository | Purpose | You need |
+| If you want to… | Start with | What you need |
 |---|---|---|
-| [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) | Native SwiftUI app for iOS 16 and later, with an Apple Watch companion | macOS, Xcode 15+, a physical iPhone, XcodeGen |
-| [nomily-android](https://github.com/Nomily-Ai/nomily-android) | Native Kotlin / Jetpack Compose app for Android 7 (API 24) and later | JDK 21, Android Studio (or Gradle), a physical Android phone |
-| **nomily-app** | This repository: project overview, licence, and brand assets | — |
+| Build the iPhone or Apple Watch client | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) | macOS, Xcode 15+, a physical iPhone; Apple Watch is optional |
+| Build the Android client | [nomily-android](https://github.com/Nomily-Ai/nomily-android) | JDK 21, Android Studio or Gradle, a physical Android phone |
+| Understand the project and licence | **nomily-app** | This repository |
 
-Each app repository carries its own build and run guide. Start there. The two
-apps share device concepts, but they are independent installations, not steps of
-one procedure.
+Each client has its own build and run guide. They share product concepts, but
+they are separate native applications rather than two steps of one installation.
 
-This repository covers companion software and its supported workflows. It does
-not establish hardware appearance, dimensions, device compatibility beyond
-tested evidence, firmware availability, or commercial product terms.
+## Status and scope
+
+The client source repositories are public for inspection and local builds.
+Release readiness, store availability, supported device combinations, and
+firmware compatibility are tracked separately and must not be inferred from a
+source commit alone.
+
+This account covers the companion software and its documented workflows. It
+does **not** publish production service credentials, user recordings, device
+identifiers, firmware release packages, hardware specifications, or commercial
+product commitments.
+
+## Repository map
+
+| Repository | Role |
+|---|---|
+| [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) | Native SwiftUI client for iOS and Apple Watch |
+| [nomily-android](https://github.com/Nomily-Ai/nomily-android) | Native Kotlin / Jetpack Compose client for Android |
+| **nomily-app** | Project map, project-wide licence, and reusable brand-preview assets |
 
 ## App preview
 
 | Recordings | Transcription providers | LLM providers for summaries |
 |---|---|---|
-| <img src="media/app-recordings.png" alt="Nomily AI recordings library" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily AI transcription provider settings" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily AI LLM provider and model selection for summaries" width="200"> |
+| <img src="media/app-recordings.png" alt="Nomily recordings library" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily transcription provider settings" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily LLM provider and model selection" width="200"> |
 
-Screens use synthetic or non-sensitive preview data. See
+Screens use synthetic or non-sensitive preview data. Review
 [`media/README.md`](media/README.md) before reusing product imagery or brand
 assets.
 
-## Security and privacy
+## Privacy and responsible reporting
 
 - API keys are supplied by the user and must never be committed.
-- Device identifiers, recordings, transcripts, logs, and generated configuration
-  files must remain untracked.
+- Keep recordings, transcripts, device identifiers, logs, generated
+  configuration files, and access credentials out of issues and pull requests.
+- For a reproducible bug, open an issue in the affected client repository and
+  include the client version, device/OS version, and redacted steps to reproduce.
 
-Third-party dependencies remain subject to their own licenses and terms.
+## Licence
 
-## License
+The source is available under the [Nomily Small Team License 1.0.0](LICENSE).
+It permits personal use and company use by teams of up to 10 people; larger
+teams need a separate paid licence. Contact <nomily@geekis.com> for commercial
+licensing. This is a source-available licence, not an OSI-approved open-source
+licence.
 
-This project is licensed under the [Nomily Small Team License 1.0.0](LICENSE).
-
-Personal use is free. Use for the benefit of a company is permitted while no more
-than 10 individuals in that company use the software; beyond that, a paid licence
-is required — write to <nomily@geekis.com>. The same 10-user rule applies to the
-builds we distribute through app stores. Full terms are in [`LICENSE`](LICENSE),
-and the app terms of use are at <https://geekis.com/terms.html>.
-
-Brand assets under [`media/`](media/) are not covered by this license; see
+Brand assets under [`media/`](media/) are excluded from that licence; see
 [`media/README.md`](media/README.md).
