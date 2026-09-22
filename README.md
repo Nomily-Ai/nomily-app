@@ -97,13 +97,15 @@ After Nomily AI is installed on the paired iPhone, install its Watch companion:
 
 1. Open the **Watch** app on iPhone and scroll to **Available Apps**.
 2. Find **Nomily AI** and tap **Install**.
-3. Open Nomily AI on Apple Watch and record when V05E is not with you. The
+3. In Nomily AI on iPhone, open **Settings → Apple Watch** and confirm it shows
+   **Installed**.
+4. Open Nomily AI on Apple Watch and record when V05E is not with you. The
    recording syncs to the iPhone Nomily AI app for transcription, organization,
    and summaries.
 
-| Install on Apple Watch | Record on Apple Watch |
-|---|---|
-| <img src="media/apple-watch-install-nomily-ai.png" alt="iPhone Watch app showing Nomily AI with an Install button" width="280"> | <img src="media/apple-watch-recording.png" alt="Nomily AI ready to record on Apple Watch" width="280"> |
+| Install from Watch App | Confirm in Nomily settings | Record on Apple Watch |
+|---|---|---|
+| <img src="media/apple-watch-install-nomily-ai.png" alt="iPhone Watch app showing Nomily AI with an Install button" width="250"> | <img src="media/apple-watch-settings.png" alt="Nomily AI settings showing Apple Watch installed" width="250"> | <img src="media/apple-watch-recording.png" alt="Nomily AI ready to record on Apple Watch" width="250"> |
 
 ### Planned or not published
 
