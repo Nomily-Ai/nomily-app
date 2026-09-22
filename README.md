@@ -6,6 +6,13 @@
   <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily BYOK voice recording workflow from recorder to transcript, summary, and AI provider">
 </p>
 
+<p align="center">
+  <a href="https://github.com/Nomily-Ai/nomily-ios"><img src="https://img.shields.io/badge/iOS%20%2B%20Apple%20Watch-SwiftUI-111318?style=for-the-badge&logo=swift&logoColor=white" alt="iOS and Apple Watch client"></a>
+  <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android client"></a>
+  <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="Bring your own key"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="Source-available licence"></a>
+</p>
+
 **BYOK voice-recording companion for V05E, Apple Watch, and iPhone imports —
 ASR transcription, speaker diarization, AI summaries, and local ASR endpoint
 support.**
@@ -16,6 +23,12 @@ you configure, and generates a summary with an AI provider you choose.
 This repository is the project entry point. The runnable native clients live in
 [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) and
 [`nomily-android`](https://github.com/Nomily-Ai/nomily-android).
+
+## Quick links
+
+| 🌐 Online demo | 🎥 Video demos | 📚 Documentation |
+|---|---|---|
+| [Geekis.com · coming soon](https://geekis.com) | [Nomily on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [Geekis.com](https://geekis.com) |
 
 ## What is Nomily?
 
@@ -124,7 +137,7 @@ After Nomily AI is installed on the paired iPhone, install its Watch companion:
 | Other recorder models and protocols | Compatibility is not committed until tested with the relevant firmware. |
 | Android Watch companion | Not published. |
 | RAG, MCP, shared self-hosted sync | Not represented by the current public client source; not an announced capability. |
-| Online no-key demo | Planned for the public site; not linked from this repository yet. |
+| Online no-key demo | Planned for the public site; the temporary entry point is [Geekis.com](https://geekis.com). |
 
 ## Repository map
 
