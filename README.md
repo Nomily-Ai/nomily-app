@@ -2,6 +2,10 @@
 
 > **Recorder → Nomily → Your API Key → Your AI**
 
+<p align="center">
+  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily BYOK voice recording workflow from recorder to transcript, summary, and AI provider">
+</p>
+
 **BYOK voice-recording companion for V05E, Apple Watch, and iPhone imports —
 ASR transcription, speaker diarization, AI summaries, and local ASR endpoint
 support.**
