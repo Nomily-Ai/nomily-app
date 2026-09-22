@@ -1,42 +1,121 @@
-# Nomily App
+# Nomily
 
-> Your recordings. Your keys. Your AI.
+> **Recorder → Nomily → Your API Key → Your AI**
 
-Nomily is companion software for supported AI recording devices. This repository
-is the public project entry point: use it to understand the project boundary,
-choose a mobile client, and find the applicable licence. The runnable clients
-live in their own repositories.
+Nomily is BYOK companion software for supported recording inputs. It helps you
+bring recordings from a phone, Apple Watch, or compatible BLE recorder into a
+native client, transcribe them with a provider you configure, and generate a
+summary with an AI provider you choose.
 
-## Start here
+This repository is the project entry point. The runnable native clients live in
+[`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) and
+[`nomily-android`](https://github.com/Nomily-Ai/nomily-android).
 
-| If you want to… | Start with | What you need |
+## What is Nomily?
+
+Nomily is not a hosted transcription account or a shared recording cloud. It is
+a native companion workflow for recordings and user-configured AI services. The
+app keeps the choice of transcription and summary provider with the user.
+
+The public repositories provide source for inspection and local builds. A source
+commit is not a promise of store availability, device/firmware compatibility, or
+a production service release.
+
+## What it does today
+
+- Connects to the currently implemented BLE recorder workflow, downloads
+  recordings, and manages a local recordings library.
+- Lets the iOS client record on iPhone and Apple Watch, then bring Watch
+  recordings into the iPhone app.
+- Transcribes live or recorded audio through Azure Speech or a user-operated
+  local faster-whisper-compatible ASR endpoint.
+- Generates summaries, titles, and translations with a configured LLM provider:
+  OpenAI, Anthropic, Gemini, OpenRouter, Ollama, or a custom OpenAI-compatible
+  endpoint.
+- Provides native iOS / Apple Watch and Android implementations rather than a
+  cross-platform wrapper.
+
+## Input support
+
+| Input | Current source status | Notes |
 |---|---|---|
-| Build the iPhone or Apple Watch client | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) | macOS, Xcode 15+, a physical iPhone; Apple Watch is optional |
-| Build the Android client | [nomily-android](https://github.com/Nomily-Ai/nomily-android) | JDK 21, Android Studio or Gradle, a physical Android phone |
-| Understand the project and licence | **nomily-app** | This repository |
+| iPhone microphone | Implemented in `nomily-ios` | Native iOS recording workflow. |
+| Apple Watch microphone | Implemented in `nomily-ios` | A paired Watch companion transfers recordings to iPhone. |
+| Supported BLE recorder workflow | Implemented in both clients | Compatibility still depends on the actual device and firmware under test. |
+| Other recorder models | Not committed | A model is not supported merely because it can record audio. |
+| Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
 
-Each client has its own build and run guide. They share product concepts, but
-they are separate native applications rather than two steps of one installation.
+## Why BYOK?
 
-## Status and scope
+BYOK means you configure the provider credentials used for transcription and
+summaries. The provider account, billing, retention controls, and applicable
+terms remain between you and that provider. Never add API keys, recordings,
+transcripts, device identifiers, or generated configuration to an issue or pull
+request.
 
-The client source repositories are public for inspection and local builds.
-Release readiness, store availability, supported device combinations, and
-firmware compatibility are tracked separately and must not be inferred from a
-source commit alone.
+## How it works
 
-This account covers the companion software and its documented workflows. It
-does **not** publish production service credentials, user recordings, device
-identifiers, firmware release packages, hardware specifications, or commercial
-product commitments.
+```text
+Phone / Apple Watch / compatible BLE recorder
+                  │
+                  ▼
+        Nomily native client
+  local library · transfer · playback
+                  │
+        ┌─────────┴──────────┐
+        ▼                    ▼
+Azure Speech or        Your LLM provider
+local ASR endpoint     summary · title · translation
+        │                    │
+        └─────────┬──────────┘
+                  ▼
+         Transcript and summary
+```
+
+### Where data goes
+
+| Stage | Destination | You control |
+|---|---|---|
+| Recording and transfer | Your supported input device and Nomily client | The device, client installation, and local library. |
+| Transcription | Azure Speech **or** a local ASR endpoint you operate | ASR provider choice and credentials. |
+| Summary, title, translation | The LLM provider you configure | Provider, model, endpoint, and credentials. |
+| Shared Nomily cloud/sync service | Not included in these public repositories | Do not assume a hosted sync or account backend exists. |
+
+`nomily-app` does not bundle a public provider account or a complete
+self-hosted sync stack. A local ASR endpoint is a supported integration; it is
+not a claim that the entire product is self-hosted.
+
+## Choose your next step
+
+| Goal | Start here |
+|---|---|
+| Understand the end-to-end flow | The offline interactive demo is being deployed from `nomily-site`; it uses example data only and never uploads audio or calls AI services. |
+| Build for iPhone or Apple Watch | [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) — macOS, Xcode 15+, and a physical iPhone; Apple Watch optional. |
+| Build for Android | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android) — JDK 21, Android Studio or Gradle, and a physical Android phone. |
+| Report a defect | Open an issue in the affected native-client repository with redacted reproduction steps. |
+| Review terms | Read the [Nomily Small Team License](LICENSE). |
 
 ## Repository map
 
-| Repository | Role |
-|---|---|
-| [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) | Native SwiftUI client for iOS and Apple Watch |
-| [nomily-android](https://github.com/Nomily-Ai/nomily-android) | Native Kotlin / Jetpack Compose client for Android |
-| **nomily-app** | Project map, project-wide licence, and reusable brand-preview assets |
+| Repository | Role | Relationship |
+|---|---|---|
+| **nomily-app** | Project entry, cross-project documentation, licence, and preview assets | Start here. It does not contain an installable client by itself. |
+| [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) | SwiftUI client for iPhone and Apple Watch | Its own native project, build instructions, and issue tracker. |
+| [`nomily-android`](https://github.com/Nomily-Ai/nomily-android) | Kotlin / Jetpack Compose client for Android | Its own native project, build instructions, and issue tracker. |
+| `nomily-site` | Private static-site deployment source | Hosts setup and demo material; it is not a mobile-client source repository. |
+
+## Architecture and project layout
+
+The clients share product concepts and protocol expectations, but are separate
+native implementations. Review the relevant repository before choosing a build
+path:
+
+```text
+nomily-app/       project map, licence, public preview assets
+nomily-ios/       iOS app, Watch companion, BLE / ASR / local library modules
+nomily-android/   Android app and core protocol, crypto, audio, ASR, LLM modules
+nomily-site/      private static deployment source for guides and the demo
+```
 
 ## App preview
 
@@ -53,8 +132,8 @@ assets.
 - API keys are supplied by the user and must never be committed.
 - Keep recordings, transcripts, device identifiers, logs, generated
   configuration files, and access credentials out of issues and pull requests.
-- For a reproducible bug, open an issue in the affected client repository and
-  include the client version, device/OS version, and redacted steps to reproduce.
+- For a reproducible bug, include the client version, device/OS version, and
+  redacted steps to reproduce in the affected client repository.
 
 ## Licence
 
