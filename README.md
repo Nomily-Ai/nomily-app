@@ -2,10 +2,10 @@
 
 > **Recorder → Nomily → Your API Key → Your AI**
 
-Nomily is BYOK companion software for supported recording inputs. It helps you
-bring recordings from a phone, Apple Watch, or compatible BLE recorder into a
-native client, transcribe them with a provider you configure, and generate a
-summary with an AI provider you choose.
+Nomily is BYOK companion software for V05E recordings, Apple Watch recordings,
+and audio imported on iPhone. It brings those recordings into a native client,
+transcribes them with a provider you configure, and generates a summary with an
+AI provider you choose.
 
 This repository is the project entry point. The runnable native clients live in
 [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) and
@@ -23,10 +23,10 @@ a production service release.
 
 ## What it does today
 
-- Connects to the currently implemented BLE recorder workflow, downloads
-  recordings, and manages a local recordings library.
-- Lets the iOS client record on iPhone and Apple Watch, then bring Watch
-  recordings into the iPhone app.
+- Connects to the V05E BLE recorder workflow, downloads recordings, and manages
+  a local recordings library.
+- Imports recordings on iPhone, including recordings transferred from the Apple
+  Watch companion.
 - Transcribes live or recorded audio through Azure Speech or a user-operated
   local faster-whisper-compatible ASR endpoint.
 - Generates summaries, titles, and translations with a configured LLM provider:
@@ -39,9 +39,9 @@ a production service release.
 
 | Input | Current source status | Notes |
 |---|---|---|
-| iPhone microphone | Implemented in `nomily-ios` | Native iOS recording workflow. |
+| V05E recorder | Implemented in both clients | Primary BLE recording input; compatibility still depends on the actual device and firmware under test. |
+| Audio imported on iPhone | Implemented in `nomily-ios` | iPhone is an import, management, transcription, and summary client. |
 | Apple Watch microphone | Implemented in `nomily-ios` | A paired Watch companion transfers recordings to iPhone. |
-| Supported BLE recorder workflow | Implemented in both clients | Compatibility still depends on the actual device and firmware under test. |
 | Other recorder models | Not committed | A model is not supported merely because it can record audio. |
 | Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
 
@@ -56,7 +56,7 @@ request.
 ## How it works
 
 ```text
-Phone / Apple Watch / compatible BLE recorder
+V05E recorder / Apple Watch / audio imported on iPhone
                   │
                   ▼
         Nomily native client
