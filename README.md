@@ -2,10 +2,12 @@
 
 > **Recorder → Nomily → Your API Key → Your AI**
 
-Nomily is BYOK companion software for V05E recordings, Apple Watch recordings,
-and audio imported on iPhone. It brings those recordings into a native client,
-transcribes them with a provider you configure, and generates a summary with an
-AI provider you choose.
+**BYOK voice-recording companion for V05E, Apple Watch, and iPhone imports —
+ASR transcription, speaker diarization, AI summaries, and local ASR endpoint
+support.**
+
+Nomily brings recordings into a native client, transcribes them with a provider
+you configure, and generates a summary with an AI provider you choose.
 
 This repository is the project entry point. The runnable native clients live in
 [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) and
@@ -28,30 +30,31 @@ a production service release.
 - Imports recordings on iPhone, including recordings transferred from the Apple
   Watch companion.
 - Transcribes live or recorded audio through Azure Speech or a user-operated
-  local faster-whisper-compatible ASR endpoint.
+  local faster-whisper-compatible ASR endpoint; Azure transcription enables
+  speaker diarization for up to 10 speakers.
 - Generates summaries, titles, and translations with a configured LLM provider:
   OpenAI, Anthropic, Gemini, OpenRouter, Ollama, or a custom OpenAI-compatible
   endpoint.
 - Provides native iOS / Apple Watch and Android implementations rather than a
   cross-platform wrapper.
 
-## Input support
+## Privacy and provider boundaries
 
-| Input | Current source status | Notes |
+Nomily is not a hosted transcription account or a shared recording cloud. API
+keys are supplied by the user and must never be committed. Keep recordings,
+transcripts, device identifiers, logs, generated configuration files, and access
+credentials out of issues and pull requests.
+
+| Service layer | Data sent in a configured workflow | Who provides it |
 |---|---|---|
-| V05E recorder | Implemented in both clients | Primary BLE recording input; compatibility still depends on the actual device and firmware under test. |
-| Audio imported on iPhone | Implemented in `nomily-ios` | iPhone is an import, management, transcription, and summary client. |
-| Apple Watch microphone | Implemented in `nomily-ios` | A paired Watch companion transfers recordings to iPhone. |
-| Other recorder models | Not committed | A model is not supported merely because it can record audio. |
-| Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
+| Nomily client | Recording library, transfer state, and generated files on the client | You install and operate the client. |
+| Azure Speech | Audio for transcription, when Azure is selected | Your Azure account and key. |
+| Local ASR endpoint | Audio for transcription, when a local endpoint is selected | You operate the endpoint. |
+| LLM provider | Transcript text needed for summary, title, or translation | Your selected provider, model, endpoint, and key. |
 
-## Why BYOK?
-
-BYOK means you configure the provider credentials used for transcription and
-summaries. The provider account, billing, retention controls, and applicable
-terms remain between you and that provider. Never add API keys, recordings,
-transcripts, device identifiers, or generated configuration to an issue or pull
-request.
+The public repositories do not include a shared Nomily cloud, a bundled provider
+account, or a complete self-hosted sync stack. Local ASR and Ollama are
+provider integrations, not a claim that every product layer is self-hosted.
 
 ## How it works
 
@@ -66,34 +69,32 @@ V05E recorder / Apple Watch / audio imported on iPhone
         ▼                    ▼
 Azure Speech or        Your LLM provider
 local ASR endpoint     summary · title · translation
+diarization when       OpenAI · Anthropic · Gemini
+Azure is selected      OpenRouter · Ollama · compatible endpoint
         │                    │
         └─────────┬──────────┘
                   ▼
          Transcript and summary
 ```
 
-### Where data goes
+## Recording input support
 
-| Stage | Destination | You control |
+| Input | Current source status | Notes |
 |---|---|---|
-| Recording and transfer | Your supported input device and Nomily client | The device, client installation, and local library. |
-| Transcription | Azure Speech **or** a local ASR endpoint you operate | ASR provider choice and credentials. |
-| Summary, title, translation | The LLM provider you configure | Provider, model, endpoint, and credentials. |
-| Shared Nomily cloud/sync service | Not included in these public repositories | Do not assume a hosted sync or account backend exists. |
+| V05E recorder | Implemented in both clients | Primary BLE recording input; compatibility still depends on the actual device and firmware under test. |
+| Audio imported on iPhone | Implemented in `nomily-ios` | iPhone is an import, management, transcription, and summary client. |
+| Apple Watch microphone | Implemented in `nomily-ios` | A paired Watch companion transfers recordings to iPhone. |
+| Other recorder models | Not committed | A model is not supported merely because it can record audio. |
+| Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
 
-`nomily-app` does not bundle a public provider account or a complete
-self-hosted sync stack. A local ASR endpoint is a supported integration; it is
-not a claim that the entire product is self-hosted.
+### Planned or not published
 
-## Choose your next step
-
-| Goal | Start here |
+| Item | Status |
 |---|---|
-| Understand the end-to-end flow | The offline interactive demo is being deployed from `nomily-site`; it uses example data only and never uploads audio or calls AI services. |
-| Build for iPhone or Apple Watch | [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) — macOS, Xcode 15+, and a physical iPhone; Apple Watch optional. |
-| Build for Android | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android) — JDK 21, Android Studio or Gradle, and a physical Android phone. |
-| Report a defect | Open an issue in the affected native-client repository with redacted reproduction steps. |
-| Review terms | Read the [Nomily Small Team License](LICENSE). |
+| Other recorder models and protocols | Compatibility is not committed until tested with the relevant firmware. |
+| Android Watch companion | Not published. |
+| RAG, MCP, shared self-hosted sync | Not represented by the current public client source; not an announced capability. |
+| Online no-key demo | Planned for the public site; not linked from this repository yet. |
 
 ## Repository map
 
@@ -104,7 +105,7 @@ not a claim that the entire product is self-hosted.
 | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android) | Kotlin / Jetpack Compose client for Android | Its own native project, build instructions, and issue tracker. |
 | `nomily-site` | Private static-site deployment source | Hosts setup and demo material; it is not a mobile-client source repository. |
 
-## Architecture and project layout
+## Build and project layout
 
 The clients share product concepts and protocol expectations, but are separate
 native implementations. Review the relevant repository before choosing a build
@@ -117,6 +118,13 @@ nomily-android/   Android app and core protocol, crypto, audio, ASR, LLM modules
 nomily-site/      private static deployment source for guides and the demo
 ```
 
+| Goal | Start here |
+|---|---|
+| Build for iPhone or Apple Watch | [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) — macOS, Xcode 15+, and a physical iPhone; Apple Watch optional. |
+| Build for Android | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android) — JDK 21, Android Studio or Gradle, and a physical Android phone. |
+| Report a defect | Open an issue in the affected native-client repository with redacted reproduction steps. |
+| Review terms | Read the [Nomily Small Team License](LICENSE). |
+
 ## App preview
 
 | Recordings | Transcription providers | LLM providers for summaries |
@@ -126,14 +134,6 @@ nomily-site/      private static deployment source for guides and the demo
 Screens use synthetic or non-sensitive preview data. Review
 [`media/README.md`](media/README.md) before reusing product imagery or brand
 assets.
-
-## Privacy and responsible reporting
-
-- API keys are supplied by the user and must never be committed.
-- Keep recordings, transcripts, device identifiers, logs, generated
-  configuration files, and access credentials out of issues and pull requests.
-- For a reproducible bug, include the client version, device/OS version, and
-  redacted steps to reproduce in the affected client repository.
 
 ## Licence
 
