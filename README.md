@@ -81,6 +81,16 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
          Transcript and summary
 ```
 
+## See it in action
+
+GitHub does not play YouTube Shorts inline, so each preview opens the public
+video on YouTube.
+
+| V05E × Nomily | Apple Watch × Nomily |
+|---|---|
+| [![V05E and Nomily BYOK demo](https://i.ytimg.com/vi/fNYvFTUL4w8/hqdefault.jpg)](https://youtube.com/shorts/fNYvFTUL4w8) | [![Apple Watch recordings to Nomily AI notes](https://i.ytimg.com/vi/9OWKlbxBKAI/hqdefault.jpg)](https://youtube.com/shorts/9OWKlbxBKAI) |
+| [Watch: Your Voice Recorder, Your AI](https://youtube.com/shorts/fNYvFTUL4w8) | [Watch: Apple Watch recordings to AI notes](https://youtube.com/shorts/9OWKlbxBKAI) |
+
 ## Recording input support
 
 | Input | Current source status | Notes |
