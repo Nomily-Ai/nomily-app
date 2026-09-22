@@ -91,6 +91,20 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
 | Other recorder models | Not committed | A model is not supported merely because it can record audio. |
 | Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
 
+## Apple Watch companion
+
+After Nomily AI is installed on the paired iPhone, install its Watch companion:
+
+1. Open the **Watch** app on iPhone and scroll to **Available Apps**.
+2. Find **Nomily AI** and tap **Install**.
+3. Open Nomily AI on Apple Watch and record when V05E is not with you. The
+   recording syncs to the iPhone Nomily AI app for transcription, organization,
+   and summaries.
+
+| Install on Apple Watch | Record on Apple Watch |
+|---|---|
+| <img src="media/apple-watch-install-nomily-ai.png" alt="iPhone Watch app showing Nomily AI with an Install button" width="280"> | <img src="media/apple-watch-recording.png" alt="Nomily AI ready to record on Apple Watch" width="280"> |
+
 ### Planned or not published
 
 | Item | Status |
