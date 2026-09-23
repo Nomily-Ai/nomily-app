@@ -30,9 +30,9 @@ This repository is the project entry point. The runnable native clients live in
 
 ## Quick links
 
-| 🌐 Online demo | 🎥 Video demos | 📚 Documentation |
-|---|---|---|
-| [Geekis.com · coming soon](https://geekis.com) | [Nomily on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [Geekis.com](https://geekis.com) |
+| 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 📚 Documentation |
+|---|---|---|---|
+| [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## What is Nomily?
 

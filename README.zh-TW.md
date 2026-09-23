@@ -27,9 +27,9 @@ Nomily 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並�
 
 ## 快速連結
 
-| 🌐 線上展示 | 🎥 示範影片 | 📚 文件 |
-|---|---|---|
-| [Geekis.com · 即將推出](https://geekis.com) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [Geekis.com](https://geekis.com) |
+| 🌐 線上展示 | 🎥 示範影片 | 𝕏 動態 | 📚 文件 |
+|---|---|---|---|
+| [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## Nomily 是什麼？
 

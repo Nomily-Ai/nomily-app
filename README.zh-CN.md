@@ -27,9 +27,9 @@ Nomily 将录音带入原生客户端，使用你配置的服务商转录，并�
 
 ## 快速链接
 
-| 🌐 在线演示 | 🎥 演示视频 | 📚 文档 |
-|---|---|---|
-| [Geekis.com · 即将推出](https://geekis.com) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [Geekis.com](https://geekis.com) |
+| 🌐 在线演示 | 🎥 演示视频 | 𝕏 动态 | 📚 文档 |
+|---|---|---|---|
+| [体验固定示例预览](https://geekis.com/demo/) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## Nomily 是什么？
 
