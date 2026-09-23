@@ -1,9 +1,5 @@
 # Nomily
 
-<p align="center">
-  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
-</p>
-
 > **Recorder → Nomily → Your API Key → Your AI**
 
 <p align="center">
@@ -15,6 +11,10 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android client"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="Bring your own key"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="Source-available licence"></a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
 **BYOK voice-recording companion for V05E, Apple Watch, and iPhone imports —
@@ -97,16 +97,6 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
                   ▼
          Transcript and summary
 ```
-
-## See it in action
-
-GitHub does not play YouTube Shorts inline, so each preview opens the public
-video on YouTube.
-
-| V05E × Nomily | Apple Watch × Nomily |
-|---|---|
-| [![V05E and Nomily BYOK demo](https://i.ytimg.com/vi/fNYvFTUL4w8/hqdefault.jpg)](https://youtube.com/shorts/fNYvFTUL4w8) | [![Apple Watch recordings to Nomily AI notes](https://i.ytimg.com/vi/9OWKlbxBKAI/hqdefault.jpg)](https://youtube.com/shorts/9OWKlbxBKAI) |
-| [Watch: Your Voice Recorder, Your AI](https://youtube.com/shorts/fNYvFTUL4w8) | [Watch: Apple Watch recordings to AI notes](https://youtube.com/shorts/9OWKlbxBKAI) |
 
 ## Recording input support
 

@@ -1,9 +1,5 @@
 # Nomily
 
-<p align="center">
-  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
-</p>
-
 > **录音设备 → Nomily → 你的 API Key → 你的 AI**
 
 <p align="center">
@@ -15,6 +11,10 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 客户端"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="自带密钥"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="源码可用许可"></a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
 **面向 V05E、Apple Watch 与 iPhone 导入音频的 BYOK 录音伴侣：支持 ASR 转录、说话人分离、AI 摘要与本地 ASR 端点。**
@@ -78,15 +78,6 @@ Azure Speech 或         你的 LLM 服务商
                   ▼
              转录文本与摘要
 ```
-
-## 观看实际演示
-
-GitHub 不会在 README 中直接播放 YouTube Shorts；点击预览会打开公开 YouTube 视频。
-
-| V05E × Nomily | Apple Watch × Nomily |
-|---|---|
-| [![V05E 与 Nomily BYOK 演示](https://i.ytimg.com/vi/fNYvFTUL4w8/hqdefault.jpg)](https://youtube.com/shorts/fNYvFTUL4w8) | [![Apple Watch 录音转为 Nomily AI 笔记](https://i.ytimg.com/vi/9OWKlbxBKAI/hqdefault.jpg)](https://youtube.com/shorts/9OWKlbxBKAI) |
-| [观看：你的录音器，你的 AI](https://youtube.com/shorts/fNYvFTUL4w8) | [观看：Apple Watch 录音转 AI 笔记](https://youtube.com/shorts/9OWKlbxBKAI) |
 
 ## 录音输入支持
 
