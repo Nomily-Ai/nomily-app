@@ -1,5 +1,9 @@
 # Nomily
 
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
+</p>
+
 > **Recorder → Nomily → Your API Key → Your AI**
 
 <p align="center">
@@ -188,3 +192,7 @@ licence.
 
 Brand assets under [`media/`](media/) are excluded from that licence; see
 [`media/README.md`](media/README.md).
+
+## Star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Nomily-Ai/nomily-app&type=date&legend=top-left)](https://www.star-history.com/#Nomily-Ai/nomily-app&type=date&legend=top-left)
