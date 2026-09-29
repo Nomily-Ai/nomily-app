@@ -31,6 +31,17 @@ Nomily 将录音带入原生客户端，使用你配置的服务商转录，并�
 |---|---|---|---|
 | [体验固定示例预览](https://geekis.com/demo/) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
+## 选择你的路径
+
+| 目标 | 从这里开始 |
+| --- | --- |
+| 构建 iPhone 或 Apple Watch 客户端 | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
+| 构建 Android 客户端 | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
+| 不使用设备、Key 或上传文件，先体验流程 | [体验固定示例 Demo](https://geekis.com/demo/) |
+| 获取支持、反馈文档或咨询许可 | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |
+
+本仓库不是可直接安装的客户端，也不是 Docker 部署项目。开始本地构建前，请阅读对应客户端仓库的构建说明。
+
 ## Nomily 是什么？
 
 Nomily 不是托管的转录账户或共享录音云，而是面向录音与用户自选 AI 服务的原生配套工作流。转录与摘要服务商由用户选择。
@@ -109,7 +120,7 @@ Azure Speech 或         你的 LLM 服务商
 | 其他录音器型号与协议 | 仅在相关固件完成测试后才会确认兼容性。 |
 | Android Watch 伴侣 | 未发布。 |
 | RAG、MCP、共享自托管同步 | 当前公开客户端源码未体现，尚非已宣布能力。 |
-| 无需 Key 的在线演示 | 计划在公开网站提供；临时入口为 [Geekis.com](https://geekis.com)。 |
+| 无需 Key 的在线演示 | 固定数据预览已在 [Geekis.com/demo](https://geekis.com/demo/) 上线；不会上传音频、调用 ASR 或 LLM 服务，也不会存储 Key。 |
 
 ## 仓库关系
 
@@ -136,6 +147,7 @@ nomily-site/      私有静态部署源码，用于指南与演示
 | 构建 iPhone 或 Apple Watch | [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios)：macOS、Xcode 15+ 与实体 iPhone；Apple Watch 可选。 |
 | 构建 Android | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android)：JDK 21、Android Studio 或 Gradle 与实体 Android 手机。 |
 | 报告缺陷 | 在受影响的原生客户端仓库创建 Issue，并提供脱敏后的复现步骤。 |
+| 获取支持或反馈入口仓问题 | 查看 [SUPPORT.md](SUPPORT.md)，或发送邮件至 [nomily@geekis.com](mailto:nomily@geekis.com)。 |
 | 查看条款 | 阅读 [Nomily Small Team License](LICENSE)。 |
 
 ## App 预览
@@ -151,6 +163,11 @@ nomily-site/      私有静态部署源码，用于指南与演示
 源码使用 [Nomily Small Team License 1.0.0](LICENSE)。个人使用以及 10 人及以下团队可使用；更大团队需要单独的付费许可。商业许可请联系 <nomily@geekis.com>。这是一份源码可用许可，并非 OSI 批准的开源许可证。
 
 [`media/`](media/) 中的品牌素材不包含在该许可内，详见 [`media/README.md`](media/README.md)。
+
+## 社区与安全
+
+提交改动前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。一般支持请查看 [SUPPORT.md](SUPPORT.md)。
+安全漏洞请按照 [SECURITY.md](SECURITY.md) 私密报告，不要公开提交 Issue。
 
 ## Star 历史
 

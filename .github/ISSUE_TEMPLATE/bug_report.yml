@@ -16,10 +16,9 @@ body:
       label: Component
       options:
         - iOS app
-        - Python CLI
-        - Local transcription server
-        - Documentation
-        - Other
+        - Android app
+        - Documentation or site preview
+        - Cross-platform workflow
     validations:
       required: true
   - type: textarea

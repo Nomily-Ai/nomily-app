@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability
-    url: https://github.com/Nomily-Ai/nomily-app/security
-    about: Use private vulnerability reporting instead of a public issue.
+    url: https://github.com/Nomily-Ai/nomily-app/security/policy
+    about: Follow the private reporting process in SECURITY.md instead of opening a public issue.
+  - name: General support
+    url: https://github.com/Nomily-Ai/nomily-app/blob/main/SUPPORT.md
+    about: Find the correct Nomily repository or contact channel.

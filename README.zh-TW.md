@@ -31,6 +31,17 @@ Nomily 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並�
 |---|---|---|---|
 | [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
+## 選擇你的路徑
+
+| 目標 | 從這裡開始 |
+| --- | --- |
+| 建置 iPhone 或 Apple Watch 用戶端 | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
+| 建置 Android 用戶端 | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
+| 不使用裝置、Key 或上傳檔案，先體驗流程 | [體驗固定範例 Demo](https://geekis.com/demo/) |
+| 取得支援、回饋文件或詢問授權 | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |
+
+本儲存庫不是可直接安裝的用戶端，也不是 Docker 部署專案。開始本機建置前，請閱讀對應用戶端儲存庫的建置說明。
+
 ## Nomily 是什麼？
 
 Nomily 不是託管式轉錄帳戶或共用錄音雲端，而是面向錄音與使用者自選 AI 服務的原生配套流程。轉錄與摘要服務商由使用者選擇。
@@ -109,7 +120,7 @@ Azure Speech 或         你的 LLM 服務商
 | 其他錄音器型號與協定 | 僅在相關韌體完成測試後才會確認相容性。 |
 | Android Watch 夥伴 | 未發布。 |
 | RAG、MCP、共用自託管同步 | 目前公開用戶端原始碼未呈現，尚非已宣布能力。 |
-| 無需 Key 的線上展示 | 計畫在公開網站提供；暫時入口為 [Geekis.com](https://geekis.com)。 |
+| 無需 Key 的線上展示 | 固定資料預覽已在 [Geekis.com/demo](https://geekis.com/demo/) 上線；不會上傳音訊、呼叫 ASR 或 LLM 服務，也不會儲存 Key。 |
 
 ## 儲存庫關係
 
@@ -136,6 +147,7 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 | 建置 iPhone 或 Apple Watch | [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios)：macOS、Xcode 15+ 與實體 iPhone；Apple Watch 可選。 |
 | 建置 Android | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android)：JDK 21、Android Studio 或 Gradle 與實體 Android 手機。 |
 | 回報缺陷 | 在受影響的原生用戶端儲存庫建立 Issue，並提供去識別化的重現步驟。 |
+| 取得支援或回饋入口儲存庫問題 | 查看 [SUPPORT.md](SUPPORT.md)，或寄信至 [nomily@geekis.com](mailto:nomily@geekis.com)。 |
 | 查看條款 | 閱讀 [Nomily Small Team License](LICENSE)。 |
 
 ## App 預覽
@@ -151,6 +163,11 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 原始碼使用 [Nomily Small Team License 1.0.0](LICENSE)。個人使用以及 10 人及以下團隊可使用；更大團隊需要另行取得付費授權。商業授權請聯絡 <nomily@geekis.com>。這是一份原始碼可用授權，並非 OSI 批准的開源授權。
 
 [`media/`](media/) 中的品牌素材不包含在該授權內，詳見 [`media/README.md`](media/README.md)。
+
+## 社群與安全
+
+提交改動前請閱讀 [CONTRIBUTING.md](CONTRIBUTING.md)。一般支援請查看 [SUPPORT.md](SUPPORT.md)。
+安全漏洞請依照 [SECURITY.md](SECURITY.md) 私密回報，不要公開提交 Issue。
 
 ## Star 歷史
 

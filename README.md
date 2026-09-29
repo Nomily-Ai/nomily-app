@@ -34,6 +34,18 @@ This repository is the project entry point. The runnable native clients live in
 |---|---|---|---|
 | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
+## Choose your path
+
+| Build or need | Start here |
+| --- | --- |
+| Build for iPhone or Apple Watch | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
+| Build for Android | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
+| Explore the workflow without a device, key, or upload | [Try the fixed-data demo](https://geekis.com/demo/) |
+| Get help, report a documentation issue, or ask about licensing | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |
+
+This repository is not an installable client or a Docker deployment. Read the
+client-specific build instructions before starting a local build.
+
 ## What is Nomily?
 
 Nomily is not a hosted transcription account or a shared recording cloud. It is
@@ -131,7 +143,7 @@ After Nomily AI is installed on the paired iPhone, install its Watch companion:
 | Other recorder models and protocols | Compatibility is not committed until tested with the relevant firmware. |
 | Android Watch companion | Not published. |
 | RAG, MCP, shared self-hosted sync | Not represented by the current public client source; not an announced capability. |
-| Online no-key demo | Planned for the public site; the temporary entry point is [Geekis.com](https://geekis.com). |
+| Online no-key demo | A fixed-data preview is live at [Geekis.com/demo](https://geekis.com/demo/). It does not upload audio, call ASR or LLM services, or store keys. |
 
 ## Repository map
 
@@ -160,6 +172,7 @@ nomily-site/      private static deployment source for guides and the demo
 | Build for iPhone or Apple Watch | [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) — macOS, Xcode 15+, and a physical iPhone; Apple Watch optional. |
 | Build for Android | [`nomily-android`](https://github.com/Nomily-Ai/nomily-android) — JDK 21, Android Studio or Gradle, and a physical Android phone. |
 | Report a defect | Open an issue in the affected native-client repository with redacted reproduction steps. |
+| Need support or have a project-entry question | Read [SUPPORT.md](SUPPORT.md) or email [nomily@geekis.com](mailto:nomily@geekis.com). |
 | Review terms | Read the [Nomily Small Team License](LICENSE). |
 
 ## App preview
@@ -182,6 +195,12 @@ licence.
 
 Brand assets under [`media/`](media/) are excluded from that licence; see
 [`media/README.md`](media/README.md).
+
+## Community and security
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change. For general
+help, use [SUPPORT.md](SUPPORT.md). Report vulnerabilities privately according
+to [SECURITY.md](SECURITY.md), never in a public issue.
 
 ## Star history
 
