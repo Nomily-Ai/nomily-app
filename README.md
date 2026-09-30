@@ -1,9 +1,9 @@
-# Nomily
+# Nomily AI
 
-> **Recorder → Nomily → Your API Key → Your AI**
+> **Recorder → Nomily AI → Your API Key → Your AI**
 
 <p align="center">
-  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily BYOK voice recording workflow from recorder to transcript, summary, and AI provider">
+  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily AI BYOK voice recording workflow from recorder to transcript, summary, and AI provider">
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 ASR transcription, speaker diarization, AI summaries, and local ASR endpoint
 support.**
 
-Nomily brings recordings into a native client, transcribes them with a provider
+Nomily AI brings recordings into a native client, transcribes them with a provider
 you configure, and generates a summary with an AI provider you choose.
 
 This repository is the project entry point. The runnable native clients live in
@@ -32,7 +32,7 @@ This repository is the project entry point. The runnable native clients live in
 
 | 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 📚 Documentation |
 |---|---|---|---|
-| [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## Choose your path
 
@@ -46,9 +46,9 @@ This repository is the project entry point. The runnable native clients live in
 This repository is not an installable client or a Docker deployment. Read the
 client-specific build instructions before starting a local build.
 
-## What is Nomily?
+## What is Nomily AI?
 
-Nomily is not a hosted transcription account or a shared recording cloud. It is
+Nomily AI is not a hosted transcription account or a shared recording cloud. It is
 a native companion workflow for recordings and user-configured AI services. The
 app keeps the choice of transcription and summary provider with the user.
 
@@ -73,19 +73,19 @@ a production service release.
 
 ## Privacy and provider boundaries
 
-Nomily is not a hosted transcription account or a shared recording cloud. API
+Nomily AI is not a hosted transcription account or a shared recording cloud. API
 keys are supplied by the user and must never be committed. Keep recordings,
 transcripts, device identifiers, logs, generated configuration files, and access
 credentials out of issues and pull requests.
 
 | Service layer | Data sent in a configured workflow | Who provides it |
 |---|---|---|
-| Nomily client | Recording library, transfer state, and generated files on the client | You install and operate the client. |
+| Nomily AI client | Recording library, transfer state, and generated files on the client | You install and operate the client. |
 | Azure Speech | Audio for transcription, when Azure is selected | Your Azure account and key. |
 | Local ASR endpoint | Audio for transcription, when a local endpoint is selected | You operate the endpoint. |
 | LLM provider | Transcript text needed for summary, title, or translation | Your selected provider, model, endpoint, and key. |
 
-The public repositories do not include a shared Nomily cloud, a bundled provider
+The public repositories do not include a shared Nomily AI cloud, a bundled provider
 account, or a complete self-hosted sync stack. Local ASR and Ollama are
 provider integrations, not a claim that every product layer is self-hosted.
 
@@ -95,7 +95,7 @@ provider integrations, not a claim that every product layer is self-hosted.
 V05E recorder / Apple Watch / audio imported on iPhone
                   │
                   ▼
-        Nomily native client
+        Nomily AI native client
   local library · transfer · playback
                   │
         ┌─────────┴──────────┐
@@ -111,7 +111,7 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
 ```
 
 <p align="center">
-  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily BYOK data flow showing user-configured ASR and AI providers">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK data flow showing user-configured ASR and AI providers">
 </p>
 
 ## Recording input support
@@ -125,7 +125,7 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
 | Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
 
 <p align="center">
-  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily recording input support and future-device boundary">
+  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily AI recording input support and future-device boundary">
 </p>
 
 See the expandable [device compatibility matrix](media/devices/README.md)
@@ -143,7 +143,7 @@ After Nomily AI is installed on the paired iPhone, install its Watch companion:
    recording syncs to the iPhone Nomily AI app for transcription, organization,
    and summaries.
 
-| Install from Watch App | Confirm in Nomily settings | Record on Apple Watch |
+| Install from Watch App | Confirm in Nomily AI settings | Record on Apple Watch |
 |---|---|---|
 | <img src="media/apple-watch-install-nomily-ai.png" alt="iPhone Watch app showing Nomily AI with an Install button" width="250"> | <img src="media/apple-watch-settings.png" alt="Nomily AI settings showing Apple Watch installed" width="250"> | <img src="media/apple-watch-recording.png" alt="Nomily AI ready to record on Apple Watch" width="250"> |
 
@@ -190,7 +190,7 @@ nomily-site/      private static deployment source for guides and the demo
 
 | Recordings | Transcription providers | LLM providers for summaries |
 |---|---|---|
-| <img src="media/app-recordings.png" alt="Nomily recordings library" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily transcription provider settings" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily LLM provider and model selection" width="200"> |
+| <img src="media/app-recordings.png" alt="Nomily AI recordings library" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily AI transcription provider settings" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily AI LLM provider and model selection" width="200"> |
 
 Screens use synthetic or non-sensitive preview data. Review
 [`media/README.md`](media/README.md) before reusing product imagery or brand

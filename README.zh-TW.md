@@ -1,9 +1,9 @@
-# Nomily
+# Nomily AI
 
-> **錄音裝置 → Nomily → 你的 API Key → 你的 AI**
+> **錄音裝置 → Nomily AI → 你的 API Key → 你的 AI**
 
 <p align="center">
-  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily BYOK 語音錄製流程：從錄音裝置到轉錄、摘要與 AI 服務商">
+  <img src="media/nomily-workflow-banner.png" width="100%" alt="Nomily AI BYOK 語音錄製流程：從錄音裝置到轉錄、摘要與 AI 服務商">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 
 **面向 V05E、Apple Watch 與 iPhone 匯入音訊的 BYOK 錄音夥伴：支援 ASR 轉錄、說話者分離、AI 摘要與本機 ASR 端點。**
 
-Nomily 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並透過你選擇的 AI 服務商產生摘要。
+Nomily AI 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並透過你選擇的 AI 服務商產生摘要。
 
 這是專案入口儲存庫；可執行的原生用戶端位於
 [`nomily-ios`](https://github.com/Nomily-Ai/nomily-ios) 與
@@ -29,7 +29,7 @@ Nomily 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並�
 
 | 🌐 線上展示 | 🎥 示範影片 | 𝕏 動態 | 📚 文件 |
 |---|---|---|---|
-| [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## 選擇你的路徑
 
@@ -42,9 +42,9 @@ Nomily 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並�
 
 本儲存庫不是可直接安裝的用戶端，也不是 Docker 部署專案。開始本機建置前，請閱讀對應用戶端儲存庫的建置說明。
 
-## Nomily 是什麼？
+## Nomily AI 是什麼？
 
-Nomily 不是託管式轉錄帳戶或共用錄音雲端，而是面向錄音與使用者自選 AI 服務的原生配套流程。轉錄與摘要服務商由使用者選擇。
+Nomily AI 不是託管式轉錄帳戶或共用錄音雲端，而是面向錄音與使用者自選 AI 服務的原生配套流程。轉錄與摘要服務商由使用者選擇。
 
 公開儲存庫提供原始碼審閱與本機建置。原始碼提交並不代表應用程式商店可用、裝置/韌體相容，或生產服務已發布。
 
@@ -58,16 +58,16 @@ Nomily 不是託管式轉錄帳戶或共用錄音雲端，而是面向錄音與�
 
 ## 隱私與服務商界線
 
-Nomily 不是託管轉錄帳戶或共用錄音雲端。API Key 由使用者提供，絕不可提交至儲存庫。請勿在 Issue 或 Pull Request 中提交錄音、轉錄文字、裝置識別、日誌、產生的設定或存取憑證。
+Nomily AI 不是託管轉錄帳戶或共用錄音雲端。API Key 由使用者提供，絕不可提交至儲存庫。請勿在 Issue 或 Pull Request 中提交錄音、轉錄文字、裝置識別、日誌、產生的設定或存取憑證。
 
 | 服務層 | 已設定流程中傳送的資料 | 由誰提供 |
 |---|---|---|
-| Nomily 用戶端 | 用戶端上的錄音庫、傳輸狀態與產生檔案 | 由你安裝並執行用戶端。 |
+| Nomily AI 用戶端 | 用戶端上的錄音庫、傳輸狀態與產生檔案 | 由你安裝並執行用戶端。 |
 | Azure Speech | 選擇 Azure 時用於轉錄的音訊 | 你的 Azure 帳戶與 Key。 |
 | 本機 ASR 端點 | 選擇本機端點時用於轉錄的音訊 | 由你執行該端點。 |
 | LLM 服務商 | 用於摘要、標題或翻譯所需的轉錄文字 | 你選擇的服務商、模型、端點與 Key。 |
 
-公開儲存庫不包含共用 Nomily 雲端、內建服務商帳戶或完整自託管同步堆疊。本機 ASR 與 Ollama 是服務商整合，不代表整個產品均可自託管。
+公開儲存庫不包含共用 Nomily AI 雲端、內建服務商帳戶或完整自託管同步堆疊。本機 ASR 與 Ollama 是服務商整合，不代表整個產品均可自託管。
 
 ## 工作流程
 
@@ -75,7 +75,7 @@ Nomily 不是託管轉錄帳戶或共用錄音雲端。API Key 由使用者提�
 V05E 錄音器 / Apple Watch / iPhone 匯入音訊
                   │
                   ▼
-          Nomily 原生用戶端
+          Nomily AI 原生用戶端
    本機錄音庫 · 傳輸 · 播放
                   │
         ┌─────────┴──────────┐
@@ -91,7 +91,7 @@ Azure Speech 或         你的 LLM 服務商
 ```
 
 <p align="center">
-  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily BYOK 資料流，展示使用者設定的 ASR 與 AI 服務商">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK 資料流，展示使用者設定的 ASR 與 AI 服務商">
 </p>
 
 ## 錄音輸入支援
@@ -105,7 +105,7 @@ Azure Speech 或         你的 LLM 服務商
 | Android Watch 夥伴 | 未發布 | 不應從 Android App 原始碼推斷 Wear OS 用戶端。 |
 
 <p align="center">
-  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily 錄音輸入支援與未來裝置界線">
+  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily AI 錄音輸入支援與未來裝置界線">
 </p>
 
 在假定某個錄音器已被支援前，請先查看可擴充的[裝置相容矩陣](media/devices/README.md)。
@@ -119,7 +119,7 @@ Azure Speech 或         你的 LLM 服務商
 3. 在 iPhone 的 Nomily AI 內開啟 **Settings → Apple Watch**，確認顯示 **Installed**。
 4. 未攜帶 V05E 時，在 Apple Watch 開啟 Nomily AI 錄音；錄音會同步回 iPhone 的 Nomily AI，用於轉錄、整理和摘要。
 
-| 從 Watch App 安裝 | 在 Nomily 設定中確認 | 在 Apple Watch 錄音 |
+| 從 Watch App 安裝 | 在 Nomily AI 設定中確認 | 在 Apple Watch 錄音 |
 |---|---|---|
 | <img src="media/apple-watch-install-nomily-ai.png" alt="iPhone Watch App 中 Nomily AI 的安裝按鈕" width="250"> | <img src="media/apple-watch-settings.png" alt="Nomily AI 設定顯示 Apple Watch 已安裝" width="250"> | <img src="media/apple-watch-recording.png" alt="Nomily AI 在 Apple Watch 上準備錄音" width="250"> |
 
@@ -164,7 +164,7 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 
 | 錄音庫 | 轉錄服務商 | 用於摘要的 LLM 服務商 |
 |---|---|---|
-| <img src="media/app-recordings.png" alt="Nomily 錄音庫" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily 轉錄服務商設定" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily LLM 服務商和模型選擇" width="200"> |
+| <img src="media/app-recordings.png" alt="Nomily AI 錄音庫" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily AI 轉錄服務商設定" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily AI LLM 服務商和模型選擇" width="200"> |
 
 截圖使用合成或非敏感預覽資料。重複使用產品圖片或品牌素材前請查看 [`media/README.md`](media/README.md)。
 
