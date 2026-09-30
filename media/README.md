@@ -14,3 +14,15 @@ list with Nomily AI ready to install. It is an installation guide image, not a
 claim that every listed third-party app is associated with Nomily.
 
 App screenshots must use synthetic or non-sensitive data. Do not add images containing API keys, Wi-Fi credentials, device serial numbers, Bluetooth MAC addresses, peripheral UUIDs, recordings, transcripts, account details, or private infrastructure.
+
+## Curated public collection
+
+`screenshots/android/` contains a small, reviewed Android gallery for the
+project README. It uses non-sensitive preview data and is not a complete
+product manual. `diagrams/` contains public English diagrams that describe
+provider boundaries and input-support status without exposing device-specific
+identifiers or internal configuration.
+
+The device-support source of truth is [devices/README.md](devices/README.md).
+When adding a screenshot, review it for the sensitive information listed above
+and update the compatibility matrix if it changes a public support claim.

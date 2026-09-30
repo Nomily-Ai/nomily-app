@@ -110,6 +110,10 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
          Transcript and summary
 ```
 
+<p align="center">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily BYOK data flow showing user-configured ASR and AI providers">
+</p>
+
 ## Recording input support
 
 | Input | Current source status | Notes |
@@ -119,6 +123,13 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
 | Apple Watch microphone | Implemented in `nomily-ios` | A paired Watch companion transfers recordings to iPhone. |
 | Other recorder models | Not committed | A model is not supported merely because it can record audio. |
 | Android Watch companion | Not published | Do not infer a Wear OS client from the Android app source. |
+
+<p align="center">
+  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily recording input support and future-device boundary">
+</p>
+
+See the expandable [device compatibility matrix](media/devices/README.md)
+before assuming a recorder model is supported.
 
 ## Apple Watch companion
 
@@ -184,6 +195,16 @@ nomily-site/      private static deployment source for guides and the demo
 Screens use synthetic or non-sensitive preview data. Review
 [`media/README.md`](media/README.md) before reusing product imagery or brand
 assets.
+
+### Android workflow gallery
+
+| Recording detail | ASR configuration | LLM configuration | Summary templates |
+|---|---|---|---|
+| <img src="media/screenshots/android/recording-detail.png" alt="Android recording detail with transcript and export actions" width="180"> | <img src="media/screenshots/android/asr-providers.png" alt="Android ASR provider settings with a masked key field" width="180"> | <img src="media/screenshots/android/llm-providers.png" alt="Android LLM provider configuration using placeholder values" width="180"> | <img src="media/screenshots/android/summary-templates.png" alt="Android summary templates" width="180"> |
+
+These screenshots use non-sensitive preview data. They show the Android client
+workflow and do not promise provider availability, device compatibility, or
+store release availability.
 
 ## Licence
 

@@ -90,6 +90,10 @@ Azure Speech 或         你的 LLM 服务商
              转录文本与摘要
 ```
 
+<p align="center">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily BYOK 数据流，展示用户配置的 ASR 与 AI 服务商">
+</p>
+
 ## 录音输入支持
 
 | 输入来源 | 当前源码状态 | 说明 |
@@ -99,6 +103,12 @@ Azure Speech 或         你的 LLM 服务商
 | Apple Watch 麦克风 | `nomily-ios` 已实现 | 已配对的 Watch 伴侣将录音传回 iPhone。 |
 | 其他录音器型号 | 未承诺 | 可以录音不等于已被支持。 |
 | Android Watch 伴侣 | 未发布 | 不应从 Android App 源码推断 Wear OS 客户端。 |
+
+<p align="center">
+  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily 录音输入支持与未来设备边界">
+</p>
+
+在假定某个录音器已被支持前，请先查看可扩展的[设备兼容矩阵](media/devices/README.md)。
 
 ## Apple Watch 伴侣
 
@@ -157,6 +167,14 @@ nomily-site/      私有静态部署源码，用于指南与演示
 | <img src="media/app-recordings.png" alt="Nomily 录音库" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily 转录服务商设置" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily LLM 服务商和模型选择" width="200"> |
 
 截图使用合成或非敏感预览数据。复用产品图片或品牌素材前请查看 [`media/README.md`](media/README.md)。
+
+### Android 工作流截图
+
+| 录音详情 | ASR 配置 | LLM 配置 | 摘要模板 |
+|---|---|---|---|
+| <img src="media/screenshots/android/recording-detail.png" alt="Android 录音详情，包含转录和导出操作" width="180"> | <img src="media/screenshots/android/asr-providers.png" alt="Android ASR 服务商设置，Key 字段已遮蔽" width="180"> | <img src="media/screenshots/android/llm-providers.png" alt="Android LLM 服务商配置，使用占位值" width="180"> | <img src="media/screenshots/android/summary-templates.png" alt="Android 摘要模板" width="180"> |
+
+这些截图使用非敏感预览数据，展示 Android 客户端工作流；不代表服务商可用性、设备兼容性或应用商店已发布。
 
 ## 许可
 

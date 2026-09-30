@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1000 450" role="img" aria-labelledby="title desc">
+  <title id="title">Nomily BYOK data flow</title>
+  <desc id="desc">Recording inputs enter the Nomily native client. Audio is sent only to the transcription provider selected by the user, and transcript text is sent only to the selected AI provider when summary features are used.</desc>
+  <defs>
+    <style>
+      .title{font:700 30px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#111318}.label{font:700 16px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#111318}.small{font:500 13px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#59616d}.note{font:600 12px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#59616d}.arrow{stroke:#8c949f;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8c949f"/></marker>
+  </defs>
+  <rect width="1000" height="450" rx="24" fill="#fbfbfc"/>
+  <text x="48" y="64" class="title">Nomily BYOK data flow</text>
+  <text x="48" y="91" class="small">Your recording source. Your configured providers. Your workflow.</text>
+  <rect x="48" y="145" width="205" height="126" rx="16" fill="#fff" stroke="#dfe3e8"/>
+  <text x="72" y="181" class="label">Recording inputs</text>
+  <text x="72" y="211" class="small">V05E recorder</text>
+  <text x="72" y="235" class="small">Apple Watch on iOS</text>
+  <text x="72" y="259" class="small">iPhone audio import</text>
+  <rect x="367" y="145" width="220" height="126" rx="16" fill="#111318"/>
+  <text x="391" y="185" font-family="system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif" font-size="20" font-weight="700" fill="#fff">Nomily native client</text>
+  <text x="391" y="216" font-family="system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif" font-size="13" fill="#cbd1d8">Local library · playback</text>
+  <text x="391" y="240" font-family="system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif" font-size="13" fill="#cbd1d8">transfer · workflow controls</text>
+  <rect x="701" y="118" width="251" height="104" rx="16" fill="#fff" stroke="#e4002b" stroke-width="2"/>
+  <text x="725" y="154" class="label">ASR provider you configure</text>
+  <text x="725" y="181" class="small">Audio when transcription runs</text>
+  <rect x="701" y="254" width="251" height="104" rx="16" fill="#fff" stroke="#e4002b" stroke-width="2"/>
+  <text x="725" y="290" class="label">AI provider you configure</text>
+  <text x="725" y="317" class="small">Transcript text for summary features</text>
+  <path d="M253 208 H358" class="arrow"/>
+  <path d="M587 188 C638 188,648 170,690 170" class="arrow"/>
+  <path d="M587 235 C638 235,648 306,690 306" class="arrow"/>
+  <rect x="48" y="390" width="904" height="28" rx="8" fill="#f1f3f5"/>
+  <text x="64" y="409" class="note">Provider availability, retention, pricing, and data handling are governed by the provider and account you choose.</text>
+</svg>

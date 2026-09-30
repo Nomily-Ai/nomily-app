@@ -90,6 +90,10 @@ Azure Speech 或         你的 LLM 服務商
              轉錄文字與摘要
 ```
 
+<p align="center">
+  <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily BYOK 資料流，展示使用者設定的 ASR 與 AI 服務商">
+</p>
+
 ## 錄音輸入支援
 
 | 輸入來源 | 目前原始碼狀態 | 說明 |
@@ -99,6 +103,12 @@ Azure Speech 或         你的 LLM 服務商
 | Apple Watch 麥克風 | `nomily-ios` 已實作 | 已配對的 Watch 夥伴將錄音傳回 iPhone。 |
 | 其他錄音器型號 | 未承諾 | 可以錄音不等於已被支援。 |
 | Android Watch 夥伴 | 未發布 | 不應從 Android App 原始碼推斷 Wear OS 用戶端。 |
+
+<p align="center">
+  <img src="media/diagrams/recording-input-support.svg" width="900" alt="Nomily 錄音輸入支援與未來裝置界線">
+</p>
+
+在假定某個錄音器已被支援前，請先查看可擴充的[裝置相容矩陣](media/devices/README.md)。
 
 ## Apple Watch 夥伴
 
@@ -157,6 +167,14 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 | <img src="media/app-recordings.png" alt="Nomily 錄音庫" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily 轉錄服務商設定" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily LLM 服務商和模型選擇" width="200"> |
 
 截圖使用合成或非敏感預覽資料。重複使用產品圖片或品牌素材前請查看 [`media/README.md`](media/README.md)。
+
+### Android 工作流程截圖
+
+| 錄音詳情 | ASR 設定 | LLM 設定 | 摘要範本 |
+|---|---|---|---|
+| <img src="media/screenshots/android/recording-detail.png" alt="Android 錄音詳情，包含轉錄和匯出操作" width="180"> | <img src="media/screenshots/android/asr-providers.png" alt="Android ASR 服務商設定，Key 欄位已遮蔽" width="180"> | <img src="media/screenshots/android/llm-providers.png" alt="Android LLM 服務商設定，使用預留值" width="180"> | <img src="media/screenshots/android/summary-templates.png" alt="Android 摘要範本" width="180"> |
+
+這些截圖使用非敏感預覽資料，展示 Android 用戶端工作流程；不代表服務商可用性、裝置相容性或應用程式商店已發布。
 
 ## 授權
 
