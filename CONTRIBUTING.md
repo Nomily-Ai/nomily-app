@@ -16,10 +16,13 @@ preview assets. The runnable clients live in separate repositories.
 ## Before opening an issue
 
 1. Search existing issues first.
-2. Use synthetic or redacted reproduction data only.
-3. Never include API keys, recordings, transcripts, device identifiers,
+2. Use the **Bug report** or **Feature request** form and choose the affected
+   repository. Client behavior belongs in `nomily-ios` or `nomily-android`; this
+   repository is for project-entry documentation and preview assets.
+3. Use synthetic or redacted reproduction data only.
+4. Never include API keys, recordings, transcripts, device identifiers,
    private endpoints, production logs, firmware, or vendor documents.
-4. Report vulnerabilities privately using the process in [SECURITY.md](SECURITY.md),
+5. Report vulnerabilities privately using the process in [SECURITY.md](SECURITY.md),
    not in a public issue.
 
 ## Pull requests
