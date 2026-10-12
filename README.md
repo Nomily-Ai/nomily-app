@@ -119,6 +119,7 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
 | Input | Current source status | Notes |
 |---|---|---|
 | V05E recorder | Implemented in both clients | Primary BLE recording input; compatibility still depends on the actual device and firmware under test. |
+| TicNote NE-79 | Physical-device validation in progress on iOS | Recorder-protocol work is in progress. It is not publicly supported until recording, transfer, and transcription complete on physical hardware. |
 | Audio imported on iPhone | Implemented in `nomily-ios` | iPhone is an import, management, transcription, and summary client. |
 | Apple Watch microphone | Implemented in `nomily-ios` | A paired Watch companion transfers recordings to iPhone. |
 | Other recorder models | Not committed | A model is not supported merely because it can record audio. |
