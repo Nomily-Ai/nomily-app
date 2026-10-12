@@ -100,8 +100,8 @@ Azure Speech 或         你的 LLM 服务商
 |---|---|---|
 | V05E 录音器 | 两个客户端均已实现 | 主要 BLE 录音输入；兼容性仍取决于实际测试设备和固件。 |
 | TicNote NE-79 | iOS 实机验证中 | 录音器协议接入正在验证；完成真实设备录音、传输与转录全链路前，不标记为公开支持。 |
+| Apple Watch 麦克风 | `nomily-ios` 已实现 | watchOS 伴侣可在手表上录音，并将录音传回已配对的 iPhone 客户端。 |
 | iPhone 导入音频 | `nomily-ios` 已实现 | iPhone 是导入、管理、转录与摘要客户端。 |
-| Apple Watch 麦克风 | `nomily-ios` 已实现 | 已配对的 Watch 伴侣将录音传回 iPhone。 |
 | 其他录音器型号 | 未承诺 | 可以录音不等于已被支持。 |
 | Android Watch 伴侣 | 未发布 | 不应从 Android App 源码推断 Wear OS 客户端。 |
 
