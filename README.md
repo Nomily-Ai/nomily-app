@@ -10,6 +10,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-ios"><img src="https://img.shields.io/badge/iOS%20%2B%20Apple%20Watch-SwiftUI-111318?style=for-the-badge&logo=swift&logoColor=white" alt="iOS and Apple Watch client"></a>
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android client"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="Bring your own key"></a>
+  <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-US%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI on the US App Store"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="Source-available licence"></a>
 </p>
 
@@ -30,15 +31,16 @@ This repository is the project entry point. The runnable native clients live in
 
 ## Quick links
 
-| 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 📚 Documentation |
-|---|---|---|---|
-| [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| 📱 iPhone app | 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 📚 Documentation |
+|---|---|---|---|---|
+| [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## Choose your path
 
 | Build or need | Start here |
 | --- | --- |
 | Build for iPhone or Apple Watch | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
+| Install Nomily AI on iPhone | [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) |
 | Build for Android | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
 | Explore the workflow without a device, key, or upload | [Try the fixed-data demo](https://geekis.com/demo/) |
 | Get help, report a documentation issue, or ask about licensing | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |
@@ -52,9 +54,9 @@ Nomily AI is not a hosted transcription account or a shared recording cloud. It 
 a native companion workflow for recordings and user-configured AI services. The
 app keeps the choice of transcription and summary provider with the user.
 
-The public repositories provide source for inspection and local builds. A source
-commit is not a promise of store availability, device/firmware compatibility, or
-a production service release.
+The public repositories provide source for inspection and local builds. Store
+availability may vary by storefront and version; source commits do not promise
+device/firmware compatibility or a production service release.
 
 ## What it does today
 

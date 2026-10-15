@@ -10,6 +10,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-ios"><img src="https://img.shields.io/badge/iOS%20%2B%20Apple%20Watch-SwiftUI-111318?style=for-the-badge&logo=swift&logoColor=white" alt="iOS 与 Apple Watch 客户端"></a>
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 客户端"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="自带密钥"></a>
+  <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-%E7%BE%8E%E5%9B%BD%E5%8C%BA%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI 美国区 App Store 下载"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="源码可用许可"></a>
 </p>
 
@@ -27,15 +28,16 @@ Nomily AI 将录音带入原生客户端，使用你配置的服务商转录，�
 
 ## 快速链接
 
-| 🌐 在线演示 | 🎥 演示视频 | 𝕏 动态 | 📚 文档 |
-|---|---|---|---|
-| [体验固定示例预览](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| 📱 iPhone App | 🌐 在线演示 | 🎥 演示视频 | 𝕏 动态 | 📚 文档 |
+|---|---|---|---|---|
+| [在美国区 App Store 下载](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [体验固定示例预览](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## 选择你的路径
 
 | 目标 | 从这里开始 |
 | --- | --- |
 | 构建 iPhone 或 Apple Watch 客户端 | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
+| 在 iPhone 安装 Nomily AI | [在美国区 App Store 下载](https://apps.apple.com/us/app/nomily-ai/id6811033606) |
 | 构建 Android 客户端 | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
 | 不使用设备、Key 或上传文件，先体验流程 | [体验固定示例 Demo](https://geekis.com/demo/) |
 | 获取支持、反馈文档或咨询许可 | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |
@@ -46,7 +48,7 @@ Nomily AI 将录音带入原生客户端，使用你配置的服务商转录，�
 
 Nomily AI 不是托管的转录账户或共享录音云，而是面向录音与用户自选 AI 服务的原生配套工作流。转录与摘要服务商由用户选择。
 
-公开仓库提供源码审阅与本地构建。源码提交并不代表应用商店可用、设备/固件兼容，或生产服务已经发布。
+公开仓库提供源码审阅与本地构建。应用商店可用性会因地区与版本而不同；源码提交并不代表设备/固件兼容，或生产服务已经发布。
 
 ## 当前可以做什么
 
