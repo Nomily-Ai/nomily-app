@@ -116,6 +116,71 @@ Azure is selected      OpenRouter · Ollama · compatible endpoint
   <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK data flow showing user-configured ASR and AI providers">
 </p>
 
+## Advanced: run ASR and an LLM on your own network
+
+This is an optional advanced setup, not a complete self-hosted Nomily stack.
+Run both services on a trusted computer on the same private Wi-Fi as the phone;
+do not expose either service to the public internet.
+
+### 1. Local Whisper transcription
+
+The included reference service implements the exact Local ASR Server contract:
+WebSocket port `12300` for live audio and HTTP port `12301` for recording files.
+It needs Python 3.10+ and `ffmpeg` (`brew install ffmpeg` on macOS, or
+`sudo apt install ffmpeg python3-venv` on Ubuntu/Debian).
+
+```bash
+git clone https://github.com/Nomily-Ai/nomily-app.git
+cd nomily-app/examples/local-asr-server
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r nomily_local_asr/requirements.txt
+python -m nomily_local_asr --host 0.0.0.0 --port 12300 --http-port 12301 --model small --lang auto
+```
+
+The first run downloads the Whisper model. Follow the complete
+[local ASR reference guide](examples/local-asr-server/README.md), including a
+local `curl` test and firewall notes.
+
+### 2. Local Ollama summaries
+
+Install Ollama from [ollama.com/download](https://ollama.com/download/), then
+download a model:
+
+```bash
+ollama pull qwen3:8b
+# Linux foreground service; bind to LAN only when the phone must reach it.
+OLLAMA_HOST=0.0.0.0:11434 ollama serve
+```
+
+If Ollama is managed by its desktop app or a service manager, set its
+`OLLAMA_HOST` environment variable to `0.0.0.0:11434` and restart that service.
+This makes it reachable on the LAN; it does not add authentication.
+
+### 3. Find the computer address and fill in Nomily AI
+
+Keep the phone and computer on the same Wi-Fi, then run one of these commands:
+
+```bash
+# macOS
+ipconfig getifaddr en0
+# Linux
+hostname -I
+```
+
+If the computer prints `192.168.1.20`, enter the following in the phone app:
+
+| Nomily AI screen | Field | Value to enter |
+| --- | --- | --- |
+| **Settings -> ASR providers -> Local ASR Server** | Host | `192.168.1.20` |
+| | Port | `12300` |
+| **Settings -> LLM providers -> Ollama** | Endpoint URL | `http://192.168.1.20:11434` |
+| | Model | `qwen3:8b` (or a model returned by Verify) |
+
+Do not use `localhost` or `127.0.0.1` in the phone app: those addresses point
+to the phone, not to the computer. The ASR client automatically sends complete
+files to port `12301`. Allow inbound LAN connections to ports `12300`, `12301`,
+and `11434` only when the corresponding service is running.
+
 ## Recording input support
 
 | Input | Current source status | Notes |

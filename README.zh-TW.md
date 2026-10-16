@@ -96,6 +96,57 @@ Azure Speech 或         你的 LLM 服務商
   <img src="media/diagrams/nomily-byok-data-flow.svg" width="900" alt="Nomily AI BYOK 資料流，展示使用者設定的 ASR 與 AI 服務商">
 </p>
 
+## 進階：在自己的區域網路執行 ASR 與大模型
+
+這是選用的進階設定，不代表 Nomily 全部能力皆可自託管。僅可在手機與電腦相同的可信任 Wi-Fi 中執行，切勿將服務公開到網際網路。
+
+### 1. 本機 Whisper 轉錄
+
+此倉庫的參考服務符合 App 的 Local ASR Server 協定：即時音訊使用 WebSocket `12300`，完整錄音檔使用 HTTP `12301`。需要 Python 3.10+ 與 `ffmpeg`（macOS：`brew install ffmpeg`；Ubuntu/Debian：`sudo apt install ffmpeg python3-venv`）。
+
+```bash
+git clone https://github.com/Nomily-Ai/nomily-app.git
+cd nomily-app/examples/local-asr-server
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r nomily_local_asr/requirements.txt
+python -m nomily_local_asr --host 0.0.0.0 --port 12300 --http-port 12301 --model small --lang auto
+```
+
+首次執行會下載 Whisper 模型。完整的本機測試、連接埠與防火牆說明見[本機 ASR 參考指南](examples/local-asr-server/README.md)。
+
+### 2. 使用本機 Ollama 產生摘要
+
+從 [ollama.com/download](https://ollama.com/download/) 安裝 Ollama，再下載模型：
+
+```bash
+ollama pull qwen3:8b
+OLLAMA_HOST=0.0.0.0:11434 ollama serve
+```
+
+若 Ollama 由桌面 App 或服務管理器啟動，請將 `OLLAMA_HOST` 設為 `0.0.0.0:11434` 後重啟。這會讓區域網路裝置可連線，但不會自動加入驗證機制。
+
+### 3. 取得電腦 IP，填入手機 App
+
+手機與電腦必須連上同一個 Wi-Fi：
+
+```bash
+# macOS
+ipconfig getifaddr en0
+# Linux
+hostname -I
+```
+
+若輸出為 `192.168.1.20`，請在手機 App 中填寫：
+
+| Nomily AI 頁面 | 欄位 | 輸入內容 |
+| --- | --- | --- |
+| **Settings -> ASR providers -> Local ASR Server** | Host | `192.168.1.20` |
+| | Port | `12300` |
+| **Settings -> LLM providers -> Ollama** | Endpoint URL | `http://192.168.1.20:11434` |
+| | Model | `qwen3:8b`（或按 Verify 後回傳的模型） |
+
+勿在手機填入 `localhost` 或 `127.0.0.1`，它們指向手機本身而非電腦。App 會自動將完整錄音送往 `12301`；僅在服務執行時才允許區域網路連入 `12300`、`12301` 與 `11434`。
+
 ## 錄音輸入支援
 
 | 輸入來源 | 目前原始碼狀態 | 說明 |
