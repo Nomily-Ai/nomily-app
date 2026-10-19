@@ -28,9 +28,9 @@ Nomily AI 將錄音帶入原生用戶端，使用你設定的服務商轉錄，�
 
 ## 快速連結
 
-| 📱 iPhone App | 🌐 線上展示 | 🎥 示範影片 | 𝕏 動態 | 📚 文件 |
-|---|---|---|---|---|
-| [在美國區 App Store 下載](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| 📱 iPhone App | 🤖 Android APK | 🌐 線上展示 | 🎥 示範影片 | 𝕏 動態 | 📚 文件 |
+|---|---|---|---|---|---|
+| [在美國區 App Store 下載](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [直接下載 Android APK](https://fir.xcxwo.com/lpx7nv3c)（Google Play 審核中） | [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## 選擇你的路徑
 
@@ -38,6 +38,7 @@ Nomily AI 將錄音帶入原生用戶端，使用你設定的服務商轉錄，�
 | --- | --- |
 | 建置 iPhone 或 Apple Watch 用戶端 | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
 | 在 iPhone 安裝 Nomily AI | [在美國區 App Store 下載](https://apps.apple.com/us/app/nomily-ai/id6811033606) |
+| 在 Android 安裝 Nomily AI | [直接下載 APK](https://fir.xcxwo.com/lpx7nv3c)。Google Play 正在審核，商店上架前請使用此連結。 |
 | 建置 Android 用戶端 | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
 | 不使用裝置、Key 或上傳檔案，先體驗流程 | [體驗固定範例 Demo](https://geekis.com/demo/) |
 | 取得支援、回饋文件或詢問授權 | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |

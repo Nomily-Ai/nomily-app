@@ -31,9 +31,9 @@ This repository is the project entry point. The runnable native clients live in
 
 ## Quick links
 
-| 📱 iPhone app | 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 📚 Documentation |
-|---|---|---|---|---|
-| [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| 📱 iPhone app | 🤖 Android APK | 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 📚 Documentation |
+|---|---|---|---|---|---|
+| [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [Download the Android APK](https://fir.xcxwo.com/lpx7nv3c) *(Google Play review in progress)* | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
 
 ## Choose your path
 
@@ -41,6 +41,7 @@ This repository is the project entry point. The runnable native clients live in
 | --- | --- |
 | Build for iPhone or Apple Watch | [nomily-ios](https://github.com/Nomily-Ai/nomily-ios) |
 | Install Nomily AI on iPhone | [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) |
+| Install Nomily AI on Android | [Download the APK directly](https://fir.xcxwo.com/lpx7nv3c). Google Play review is in progress; use this link until the store listing is approved. |
 | Build for Android | [nomily-android](https://github.com/Nomily-Ai/nomily-android) |
 | Explore the workflow without a device, key, or upload | [Try the fixed-data demo](https://geekis.com/demo/) |
 | Get help, report a documentation issue, or ask about licensing | [SUPPORT.md](SUPPORT.md) · [nomily@geekis.com](mailto:nomily@geekis.com) |
