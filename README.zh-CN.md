@@ -113,7 +113,7 @@ pip install -r nomily_local_asr/requirements.txt
 python -m nomily_local_asr --host 0.0.0.0 --port 12300 --http-port 12301 --model small --lang auto
 ```
 
-首次运行会下载 Whisper 模型。完整的本机测试、端口与防火墙说明见[本地 ASR 参考指南](examples/local-asr-server/README.md)。
+首次运行会下载 Whisper 模型。完整的本机测试、端口与防火墙说明见[本地 ASR 参考指南](examples/local-asr-server/README.md)。也可将[英文 AI Agent 部署提示词](examples/local-asr-server/AI_AGENT_SETUP_PROMPT.md)复制给运行在该电脑上的 Agent，完成引导式安装。
 
 ### 2. 使用本地 Ollama 生成摘要
 

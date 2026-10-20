@@ -140,7 +140,9 @@ python -m nomily_local_asr --host 0.0.0.0 --port 12300 --http-port 12301 --model
 
 The first run downloads the Whisper model. Follow the complete
 [local ASR reference guide](examples/local-asr-server/README.md), including a
-local `curl` test and firewall notes.
+local `curl` test and firewall notes. For a guided local installation, copy
+the [English AI-agent deployment prompt](examples/local-asr-server/AI_AGENT_SETUP_PROMPT.md)
+into an agent running on the computer that will host the services.
 
 ### 2. Local Ollama summaries
 
