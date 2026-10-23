@@ -18,7 +18,8 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
-**BYOK voice-recording companion for V05E, Apple Watch, and iPhone imports —
+**BYOK voice-recording companion for V05E, Plaud Note Pro, DingTalk A1, TicNote,
+Apple Watch, and iPhone imports —
 ASR transcription, speaker diarization, AI summaries, and local ASR endpoint
 support.**
 
@@ -95,7 +96,7 @@ provider integrations, not a claim that every product layer is self-hosted.
 ## How it works
 
 ```text
-V05E recorder / Apple Watch / audio imported on iPhone
+V05E recorder / Plaud Note Pro / DingTalk A1 / TicNote / Apple Watch / audio imported on iPhone
                   │
                   ▼
         Nomily AI native client
@@ -189,7 +190,9 @@ and `11434` only when the corresponding service is running.
 | Input | Current source status | Notes |
 |---|---|---|
 | V05E recorder | Implemented in both clients | Primary BLE recording input; compatibility still depends on the actual device and firmware under test. [View on Amazon](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas) |
-| TicNote NE-79 | Physical-device validation in progress on iOS | Recorder-protocol work is in progress. It is not publicly supported until recording, transfer, and transcription complete on physical hardware. |
+| Plaud Note Pro | Supported through iPhone audio import | Export a recording from the device, then import it into Nomily AI for library, transcription, and summary workflows. This does not imply direct BLE pairing. |
+| DingTalk A1 | Supported through iPhone audio import | Export a recording from the device, then import it into Nomily AI for library, transcription, and summary workflows. This does not imply direct BLE pairing. |
+| TicNote | Supported through iPhone audio import | Export a recording from the device, then import it into Nomily AI for library, transcription, and summary workflows. This does not imply direct BLE pairing. |
 | Apple Watch microphone | Implemented in `nomily-ios` | The watchOS companion records on Watch and transfers recordings to the paired iPhone client. |
 | Audio imported on iPhone | Implemented in `nomily-ios` | iPhone is an import, management, transcription, and summary client. |
 | Other recorder models | Not committed | A model is not supported merely because it can record audio. |

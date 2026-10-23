@@ -6,7 +6,9 @@ merely because it records audio, exposes Bluetooth, or has an export function.
 | Input source | Public status | Client | Notes |
 | --- | --- | --- | --- |
 | V05E recorder | Implemented | iOS and Android | BLE recording workflow; real compatibility depends on the tested device and firmware. [View on Amazon](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas) |
-| TicNote NE-79 | Physical-device validation in progress | iOS | Recorder-protocol work is under validation. It is not publicly supported until recording, transfer, and transcription complete on physical hardware. |
+| Plaud Note Pro | Supported through iPhone audio import | iOS | Export a recording from the device, then import it into Nomily AI. This does not imply direct BLE pairing. |
+| DingTalk A1 | Supported through iPhone audio import | iOS | Export a recording from the device, then import it into Nomily AI. This does not imply direct BLE pairing. |
+| TicNote | Supported through iPhone audio import | iOS | Export a recording from the device, then import it into Nomily AI. This does not imply direct BLE pairing. |
 | Apple Watch microphone | Implemented | iOS / watchOS | Records on Watch and transfers to the paired iPhone client. |
 | Audio imported on iPhone | Implemented | iOS | Import, library, transcription, and summary workflow. |
 | Other recorder models | Not committed | — | Requires model-specific protocol, transfer, and firmware validation. |
