@@ -18,7 +18,7 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
-**面向 V05E、Plaud Note Pro、釘釘 A1、TicNote、Apple Watch 與 iPhone 匯入音訊的 BYOK 錄音夥伴：支援 ASR 轉錄、說話者分離、AI 摘要與本機 ASR 端點。**
+**面向 Vobot V05E、Plaud Note Pro、釘釘 A1、TicNote、Apple Watch 與 iPhone 匯入音訊的 BYOK 錄音夥伴：支援 ASR 轉錄、說話者分離、AI 摘要與本機 ASR 端點。**
 
 Nomily AI 將錄音帶入原生用戶端，使用你設定的服務商轉錄，並透過你選擇的 AI 服務商產生摘要。
 
@@ -75,7 +75,7 @@ Nomily AI 不是託管轉錄帳戶或共用錄音雲端。API Key 由使用者�
 ## 工作流程
 
 ```text
-V05E 錄音器 / Plaud Note Pro / 釘釘 A1 / TicNote / Apple Watch / iPhone 匯入音訊
+Vobot V05E 錄音器 / Plaud Note Pro / 釘釘 A1 / TicNote / Apple Watch / iPhone 匯入音訊
                   │
                   ▼
           Nomily AI 原生用戶端
@@ -152,7 +152,7 @@ hostname -I
 
 | 輸入來源 | 目前原始碼狀態 | 說明 |
 |---|---|---|
-| V05E 錄音器 | 兩個用戶端均已實作 | 主要 BLE 錄音輸入；相容性仍取決於實際測試裝置和韌體。[在 Amazon 查看](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas) |
+| Vobot V05E 錄音器 | 兩個用戶端均已實作 | 主要 BLE 錄音輸入；相容性仍取決於實際測試裝置和韌體。[在 Amazon 查看](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas) |
 | Plaud Note Pro | 透過 iPhone 匯入音訊支援 | 從裝置匯出錄音後匯入 Nomily AI，即可進入錄音庫、轉錄與摘要流程；這不代表支援直接 BLE 配對。 |
 | 釘釘 A1 | 透過 iPhone 匯入音訊支援 | 從裝置匯出錄音後匯入 Nomily AI，即可進入錄音庫、轉錄與摘要流程；這不代表支援直接 BLE 配對。 |
 | TicNote | 透過 iPhone 匯入音訊支援 | 從裝置匯出錄音後匯入 Nomily AI，即可進入錄音庫、轉錄與摘要流程；這不代表支援直接 BLE 配對。 |
