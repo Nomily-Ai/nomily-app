@@ -8,6 +8,7 @@
 | iPhone or Apple Watch build and runtime problem | [nomily-ios issues](https://github.com/Nomily-Ai/nomily-ios/issues) |
 | Android build and runtime problem | [nomily-android issues](https://github.com/Nomily-Ai/nomily-android/issues) |
 | Public documentation, site preview, or project-entry feedback | [nomily-app issues](https://github.com/Nomily-Ai/nomily-app/issues) |
+| Community discussion, setup questions, or product feedback | [Join the Nomily AI Discord](https://discord.gg/gSGRcmFKH) |
 | General support or commercial licensing | [nomily@geekis.com](mailto:nomily@geekis.com) |
 | Security vulnerability | [SECURITY.md](SECURITY.md) |
 

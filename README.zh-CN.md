@@ -11,6 +11,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 客户端"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="自带密钥"></a>
   <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-%E7%BE%8E%E5%9B%BD%E5%8C%BA%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI 美国区 App Store 下载"></a>
+  <a href="https://discord.gg/gSGRcmFKH"><img src="https://img.shields.io/badge/Discord-%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="加入 Nomily AI Discord 社区"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="源码可用许可"></a>
 </p>
 
@@ -28,9 +29,9 @@ Nomily AI 将录音带入原生客户端，使用你配置的服务商转录，�
 
 ## 快速链接
 
-| 📱 iPhone App | 🤖 Android App | 🌐 在线演示 | 🎥 演示视频 | 𝕏 动态 | 📚 文档 |
-|---|---|---|---|---|---|
-| [在美国区 App Store 下载](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [在 Google Play 下载](https://play.google.com/store/apps/details?id=com.nomily.app) | [体验固定示例预览](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| 📱 iPhone App | 🤖 Android App | 🌐 在线演示 | 🎥 演示视频 | 𝕏 动态 | 💬 Discord | 📚 文档 |
+|---|---|---|---|---|---|---|
+| [在美国区 App Store 下载](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [在 Google Play 下载](https://play.google.com/store/apps/details?id=com.nomily.app) | [体验固定示例预览](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [加入社区](https://discord.gg/gSGRcmFKH) | [Geekis.com](https://geekis.com) |
 
 ## 选择你的路径
 
@@ -241,6 +242,10 @@ nomily-site/      私有静态部署源码，用于指南与演示
 [`media/`](media/) 中的品牌素材不包含在该许可内，详见 [`media/README.md`](media/README.md)。
 
 ## 社区与安全
+
+### 加入 Nomily AI Discord 社区
+
+在 [Nomily AI Discord 社区](https://discord.gg/gSGRcmFKH) 提问设置问题、分享反馈，并与其他 Nomily 用户交流。
 
 提交改动前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。一般支持请查看 [SUPPORT.md](SUPPORT.md)。
 安全漏洞请按照 [SECURITY.md](SECURITY.md) 私密报告，不要公开提交 Issue。

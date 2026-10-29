@@ -11,6 +11,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 用戶端"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="自帶金鑰"></a>
   <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-US%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI 美國區 App Store 下載"></a>
+  <a href="https://discord.gg/gSGRcmFKH"><img src="https://img.shields.io/badge/Discord-%E5%8A%A0%E5%85%A5%E7%A4%BE%E7%BE%A4-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="加入 Nomily AI Discord 社群"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="原始碼可用授權"></a>
 </p>
 
@@ -28,9 +29,9 @@ Nomily AI 將錄音帶入原生用戶端，使用你設定的服務商轉錄，�
 
 ## 快速連結
 
-| 📱 iPhone App | 🤖 Android App | 🌐 線上展示 | 🎥 示範影片 | 𝕏 動態 | 📚 文件 |
-|---|---|---|---|---|---|
-| [在美國區 App Store 下載](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [在 Google Play 下載](https://play.google.com/store/apps/details?id=com.nomily.app) | [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Geekis.com](https://geekis.com) |
+| 📱 iPhone App | 🤖 Android App | 🌐 線上展示 | 🎥 示範影片 | 𝕏 動態 | 💬 Discord | 📚 文件 |
+|---|---|---|---|---|---|---|
+| [在美國區 App Store 下載](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [在 Google Play 下載](https://play.google.com/store/apps/details?id=com.nomily.app) | [體驗固定範例預覽](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [加入社群](https://discord.gg/gSGRcmFKH) | [Geekis.com](https://geekis.com) |
 
 ## 選擇你的路徑
 
@@ -240,6 +241,10 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 [`media/`](media/) 中的品牌素材不包含在該授權內，詳見 [`media/README.md`](media/README.md)。
 
 ## 社群與安全
+
+### 加入 Nomily AI Discord 社群
+
+在 [Nomily AI Discord 社群](https://discord.gg/gSGRcmFKH) 詢問設定問題、分享回饋，並與其他 Nomily 使用者交流。
 
 提交改動前請閱讀 [CONTRIBUTING.md](CONTRIBUTING.md)。一般支援請查看 [SUPPORT.md](SUPPORT.md)。
 安全漏洞請依照 [SECURITY.md](SECURITY.md) 私密回報，不要公開提交 Issue。
