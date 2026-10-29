@@ -11,7 +11,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android client"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="Bring your own key"></a>
   <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-US%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI on the US App Store"></a>
-  <a href="https://discord.gg/gSGRcmFKH"><img src="https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Nomily AI Discord community"></a>
+  <a href="https://discord.gg/uQFj3Rfv54"><img src="https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Nomily AI Discord community"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="Source-available licence"></a>
 </p>
 
@@ -35,7 +35,7 @@ This repository is the project entry point. The runnable native clients live in
 
 | 📱 iPhone app | 🤖 Android app | 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 💬 Discord | 📚 Documentation |
 |---|---|---|---|---|---|---|
-| [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [Get it on Google Play](https://play.google.com/store/apps/details?id=com.nomily.app) | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Join the community](https://discord.gg/gSGRcmFKH) | [Geekis.com](https://geekis.com) |
+| [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [Get it on Google Play](https://play.google.com/store/apps/details?id=com.nomily.app) | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Join the community](https://discord.gg/uQFj3Rfv54) | [Geekis.com](https://geekis.com) |
 
 ## Choose your path
 
@@ -297,7 +297,7 @@ Brand assets under [`media/`](media/) are excluded from that licence; see
 ### Join the Nomily AI Discord
 
 Ask setup questions, share feedback, and meet other Nomily users in the
-[Nomily AI Discord community](https://discord.gg/gSGRcmFKH).
+[Nomily AI Discord community](https://discord.gg/uQFj3Rfv54).
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change. For general
 help, use [SUPPORT.md](SUPPORT.md). Report vulnerabilities privately according
