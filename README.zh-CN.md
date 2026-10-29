@@ -19,7 +19,7 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
-**面向 Vobot V05E、Plaud Note Pro、钉钉 A1、TicNote、Apple Watch 与 iPhone 导入音频的 BYOK 录音伴侣：支持 ASR 转录、说话人分离、AI 摘要与本地 ASR 端点。**
+**面向 Vobot V05E、Plaud Note Pro、钉钉 A1、TicNote、安克 AI 录音豆（soundcore Work，D3200）、Apple Watch 与 iPhone 导入音频的 BYOK 录音伴侣：支持 ASR 转录、说话人分离、AI 摘要与本地 ASR 端点。**
 
 Nomily AI 将录音带入原生客户端，使用你配置的服务商转录，并通过你选择的 AI 服务商生成摘要。
 
@@ -76,7 +76,7 @@ Nomily AI 不是托管转录账户或共享录音云。API Key 由用户提供�
 ## 工作流程
 
 ```text
-Vobot V05E 录音器 / Plaud Note Pro / 钉钉 A1 / TicNote / Apple Watch / iPhone 导入音频
+Vobot V05E 录音器 / Plaud Note Pro / 钉钉 A1 / TicNote / 安克 AI 录音豆（soundcore Work，D3200）/ Apple Watch / iPhone 导入音频
                   │
                   ▼
           Nomily AI 原生客户端
@@ -156,6 +156,7 @@ hostname -I
 |---|---|---|
 | Vobot V05E 录音器 | 两个客户端均已实现 | 主要 BLE 录音输入；兼容性仍取决于实际测试设备和固件。[在 Amazon 查看](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas) |
 | Plaud Note Pro | 通过 iPhone 导入音频支持 | 从设备导出录音后导入 Nomily AI，即可进入录音库、转写与摘要流程；这不代表支持直接 BLE 配对。 |
+| 安克 AI 录音豆（soundcore Work，D3200） | 通过 iPhone 导入音频支持 | 从设备导出录音后导入 Nomily AI，即可进入录音库、转写与摘要流程；这不代表支持直接 BLE 配对。 |
 | 钉钉 A1 | 通过 iPhone 导入音频支持 | 从设备导出录音后导入 Nomily AI，即可进入录音库、转写与摘要流程；这不代表支持直接 BLE 配对。 |
 | TicNote | 通过 iPhone 导入音频支持 | 从设备导出录音后导入 Nomily AI，即可进入录音库、转写与摘要流程；这不代表支持直接 BLE 配对。 |
 | Apple Watch 麦克风 | `nomily-ios` 已实现 | watchOS 伴侣可在手表上录音，并将录音传回已配对的 iPhone 客户端。 |
