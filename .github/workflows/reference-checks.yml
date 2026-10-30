@@ -16,7 +16,7 @@ jobs:
       - name: Validate documentation diagrams
         run: xmllint --noout media/diagrams/*.svg
       - name: Compile local ASR reference service
-                run: python3 -m compileall -q examples/local-asr-server/nomily_local_asr
+        run: python3 -m compileall -q examples/local-asr-server/nomily_local_asr
       - name: Verify project entry points
         run: |
           test -f AGENTS.md
