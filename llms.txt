@@ -1,0 +1,28 @@
+# Nomily AI
+
+Nomily AI is a BYOK voice-recording companion. It connects recordings to the
+ASR and LLM providers selected by the user; it does not provide a shared
+transcription account or a shared recording cloud.
+
+## Start here
+
+- Project README: https://github.com/Nomily-Ai/nomily-app/blob/main/README.md
+- Setup guide and fixed-data demo: https://geekis.com
+- Community: https://discord.gg/uQFj3Rfv54
+
+## Repository map
+
+- This repository: public entry point, documentation, compatibility matrix,
+  media, and the local ASR reference service.
+- iPhone and Apple Watch source: https://github.com/Nomily-Ai/nomily-ios
+- Android source: https://github.com/Nomily-Ai/nomily-android
+- Local ASR reference service: https://github.com/Nomily-Ai/nomily-app/tree/main/examples/local-asr-server
+- Agent contribution guide: https://github.com/Nomily-Ai/nomily-app/blob/main/AGENTS.md
+
+## Capabilities and boundaries
+
+- Vobot V05E uses the implemented BLE recorder workflow.
+- Apple Watch records through the watchOS companion and transfers to paired iPhone.
+- Plaud Note Pro, soundcore Work (D3200), DingTalk A1, and TicNote use exported-audio import workflows on iPhone; this is not a claim of direct BLE pairing.
+- Local faster-whisper-compatible ASR and Ollama are optional user-operated provider integrations. Nomily is not a complete self-hosted sync stack.
+- API keys, recordings, transcripts, device identifiers, and private endpoint addresses must not be committed.
