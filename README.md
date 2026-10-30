@@ -51,6 +51,15 @@ This repository is the project entry point. The runnable native clients live in
 This repository is not an installable client or a Docker deployment. Read the
 client-specific build instructions before starting a local build.
 
+## Project navigation
+
+- [Architecture and integration boundary](ARCHITECTURE.md): exact client,
+  device, provider, and local-ASR boundaries.
+- [Public roadmap](ROADMAP.md): what is available, in progress, or only under
+  evaluation.
+- [Agent guide](AGENTS.md) · [LLM navigation](llms.txt): concise project map
+  for code agents and other machine readers.
+
 ## What is Nomily AI?
 
 Nomily AI is not a hosted transcription account or a shared recording cloud. It is
@@ -82,6 +91,9 @@ Nomily AI is not a hosted transcription account or a shared recording cloud. API
 keys are supplied by the user and must never be committed. Keep recordings,
 transcripts, device identifiers, logs, generated configuration files, and access
 credentials out of issues and pull requests.
+
+Nomily AI does not charge a subscription fee. Third-party ASR and LLM costs are
+paid separately under the selected provider's pricing.
 
 | Service layer | Data sent in a configured workflow | Who provides it |
 |---|---|---|

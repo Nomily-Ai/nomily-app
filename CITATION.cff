@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If Nomily AI helps your work, please cite this project."
+type: software
+title: "Nomily AI"
+version: "0.1.0"
+date-released: 2026-10-30
+url: "https://github.com/Nomily-Ai/nomily-app"
+repository-code: "https://github.com/Nomily-Ai/nomily-app"
+authors:
+  - name: "Nomily AI"

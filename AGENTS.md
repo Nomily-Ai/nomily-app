@@ -21,6 +21,8 @@ installable mobile client and it does not contain a shared Nomily cloud service.
   direct integration is explicitly documented and verified.
 - Do not claim that the complete product is self-hosted or fully offline. Local
   ASR and Ollama are user-operated provider integrations.
+- Keep pricing language exact: Nomily AI does not charge a subscription fee;
+  third-party ASR and LLM costs are paid separately under the provider's terms.
 - Never add API keys, recordings, transcripts, device identifiers, logs, or
   private endpoint addresses to the repository.
 
