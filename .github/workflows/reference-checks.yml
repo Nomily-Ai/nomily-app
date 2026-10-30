@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate documentation diagrams
-        run: xmllint --noout media/diagrams/*.svg
+        run: python3 -c "import sys, xml.etree.ElementTree as ET; [ET.parse(path) for path in sys.argv[1:]]" media/diagrams/*.svg
       - name: Compile local ASR reference service
         run: python3 -m compileall -q examples/local-asr-server/nomily_local_asr
       - name: Verify project entry points
