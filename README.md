@@ -11,6 +11,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android client"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="Bring your own key"></a>
   <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-US%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI on the US App Store"></a>
+  <a href="https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas"><img src="https://img.shields.io/badge/Vobot%20V05E-Buy%20on%20Amazon-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Buy Vobot V05E on Amazon"></a>
   <a href="https://discord.gg/uQFj3Rfv54"><img src="https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Nomily AI Discord community"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="Source-available licence"></a>
 </p>
@@ -36,6 +37,9 @@ This repository is the project entry point. The runnable native clients live in
 | 📱 iPhone app | 🤖 Android app | 🌐 Online demo | 🎥 Video demos | 𝕏 Updates | 💬 Discord | 📚 Documentation |
 |---|---|---|---|---|---|---|
 | [Download on the US App Store](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [Get it on Google Play](https://play.google.com/store/apps/details?id=com.nomily.app) | [Try the fixed-data preview](https://geekis.com/demo/) | [Nomily AI on YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [Join the community](https://discord.gg/uQFj3Rfv54) | [Geekis.com](https://geekis.com) |
+
+> **Have a Vobot V05E in mind?** [**Buy Vobot V05E on Amazon →**](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas)
+> The V05E is Nomily AI's primary BLE recording input.
 
 ## Choose your path
 

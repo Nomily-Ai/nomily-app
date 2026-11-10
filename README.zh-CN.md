@@ -11,6 +11,7 @@
   <a href="https://github.com/Nomily-Ai/nomily-android"><img src="https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 客户端"></a>
   <a href="https://geekis.com"><img src="https://img.shields.io/badge/BYOK-Your%20Key%20Your%20AI-E4002B?style=for-the-badge" alt="自带密钥"></a>
   <a href="https://apps.apple.com/us/app/nomily-ai/id6811033606"><img src="https://img.shields.io/badge/iPhone-%E7%BE%8E%E5%9B%BD%E5%8C%BA%20App%20Store-111318?style=for-the-badge&logo=apple&logoColor=white" alt="Nomily AI 美国区 App Store 下载"></a>
+  <a href="https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas"><img src="https://img.shields.io/badge/Vobot%20V05E-%E5%9C%A8%20Amazon%20%E8%B4%AD%E4%B9%B0-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="在 Amazon 购买 Vobot V05E"></a>
   <a href="https://discord.gg/uQFj3Rfv54"><img src="https://img.shields.io/badge/Discord-%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="加入 Nomily AI Discord 社区"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Source--available-4B5563?style=for-the-badge" alt="源码可用许可"></a>
 </p>
@@ -32,6 +33,9 @@ Nomily AI 将录音带入原生客户端，使用你配置的服务商转录，�
 | 📱 iPhone App | 🤖 Android App | 🌐 在线演示 | 🎥 演示视频 | 𝕏 动态 | 💬 Discord | 📚 文档 |
 |---|---|---|---|---|---|---|
 | [在美国区 App Store 下载](https://apps.apple.com/us/app/nomily-ai/id6811033606) | [在 Google Play 下载](https://play.google.com/store/apps/details?id=com.nomily.app) | [体验固定示例预览](https://geekis.com/demo/) | [Nomily AI YouTube Shorts](https://www.youtube.com/@Nomily-Ai/shorts) | [@nomilyai](https://x.com/nomilyai) | [加入社区](https://discord.gg/uQFj3Rfv54) | [Geekis.com](https://geekis.com) |
+
+> **想搭配 Vobot V05E 使用？** [**前往 Amazon 购买 Vobot V05E →**](https://www.amazon.com/dp/B0HHGWYS6J?maas=maas_adg_7561A19815A1FBF370F5F7E1AAD78D3E_afap_abs&ref_=aa_maas&tag=maas)
+> V05E 是 Nomily AI 当前的主要 BLE 录音输入设备。
 
 ## 选择你的路径
 
