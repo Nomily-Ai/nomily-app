@@ -26,9 +26,9 @@ Android ─> Nomily AI Android client ─> configured ASR / LLM providers
 - **Vobot V05E**: verified BLE recording workflow in the native clients.
 - **Apple Watch**: records in the watchOS companion and transfers to paired
   iPhone.
-- **Plaud Note Pro, soundcore Work (D3200) / Anker AI Recorder Bean, DingTalk
-  A1, and TicNote**: exported-audio import on iPhone; this is not direct BLE
-  pairing.
+- **Audio files already on iPhone**: can be imported into the local library.
+  This is a file-import feature, not a public compatibility or pairing claim for
+  another recorder model.
 
 The detailed status and future-device boundary live in the
 [device compatibility matrix](media/devices/README.md).

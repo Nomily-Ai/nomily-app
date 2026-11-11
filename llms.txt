@@ -25,7 +25,7 @@ transcription account or a shared recording cloud.
 
 - Vobot V05E uses the implemented BLE recorder workflow.
 - Apple Watch records through the watchOS companion and transfers to paired iPhone.
-- Plaud Note Pro, soundcore Work (D3200), DingTalk A1, and TicNote use exported-audio import workflows on iPhone; this is not a claim of direct BLE pairing.
+- Audio files already stored on iPhone can be imported. This is a file-import feature, not a public compatibility or pairing claim for another recorder model.
 - Local faster-whisper-compatible ASR and Ollama are optional user-operated provider integrations. Nomily is not a complete self-hosted sync stack.
 - Nomily AI does not charge a subscription fee. Third-party ASR and LLM costs are paid separately under the selected provider's pricing.
 - API keys, recordings, transcripts, device identifiers, and private endpoint addresses must not be committed.

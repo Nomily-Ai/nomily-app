@@ -9,21 +9,21 @@ and documented.
 - Native iPhone, Apple Watch, and Android clients.
 - Vobot V05E BLE recording workflow.
 - Apple Watch recording and transfer to paired iPhone.
-- Imported-audio workflows for Plaud Note Pro, soundcore Work (D3200) / Anker
-  AI Recorder Bean, DingTalk A1, and TicNote.
+- Import of audio files already stored on iPhone. This is not a public
+  compatibility claim for another recorder model.
 - User-configured ASR and LLM providers, plus the optional local ASR and Ollama
   setup path.
 
 ## In progress
 
 - Improve setup guidance and troubleshooting for local ASR and Ollama.
-- Expand documentation and test coverage for supported imported-audio devices.
+- Improve general audio-file import guidance and test coverage.
 - Improve iOS, Apple Watch, and Android release communication.
 
 ## Under evaluation
 
-- Additional recorder import workflows, after testing with the relevant export
-  format and firmware.
+- Additional recorder workflows, only after legal, technical, and firmware
+  review.
 - Improvements to the fixed-data online preview and educational guides.
 
 ## Explicitly not promised
