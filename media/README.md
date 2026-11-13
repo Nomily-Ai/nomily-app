@@ -4,7 +4,10 @@ The screenshots in this directory are App previews for the Nomily App repository
 
 Product photography, screenshots, logos, product names, and other brand assets in this directory are not covered by the repository's source-code license. Their inclusion does not grant trademark or commercial reuse rights.
 
-`app-recordings.png`, `app-asr-providers.png`, and `app-llm-providers.png` are App-preview screenshots. `app-llm-providers.png` is sanitized: its API-key fields show the synthetic text `API key hidden`.
+`nomily-ai-app.png` is the current unified App-preview screenshot used by the
+project README. It shows the Settings screen and contains no API keys,
+recordings, account data, device serial numbers, Bluetooth identifiers, or
+private infrastructure.
 
 `apple-watch-recording.png` shows the English Nomily Apple Watch recording
 screen. `apple-watch-settings.png` shows Nomily settings with Apple Watch
@@ -17,11 +20,9 @@ App screenshots must use synthetic or non-sensitive data. Do not add images cont
 
 ## Curated public collection
 
-`screenshots/android/` contains a small, reviewed Android gallery for the
-project README. It uses non-sensitive preview data and is not a complete
-product manual. `diagrams/` contains public English diagrams that describe
-provider boundaries and input-support status without exposing device-specific
-identifiers or internal configuration.
+`diagrams/` contains public English diagrams that describe provider boundaries
+and input-support status without exposing device-specific identifiers or
+internal configuration.
 
 The device-support source of truth is [devices/README.md](devices/README.md).
 When adding a screenshot, review it for the sensitive information listed above

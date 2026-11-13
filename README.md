@@ -273,25 +273,17 @@ nomily-site/      private static deployment source for guides and the demo
 | Need support or have a project-entry question | Read [SUPPORT.md](SUPPORT.md) or email [nomily@geekis.com](mailto:nomily@geekis.com). |
 | Review terms | Read the [Nomily Small Team License](LICENSE). |
 
-## App preview
+## Nomily AI App
 
-| Recordings | Transcription providers | LLM providers for summaries |
-|---|---|---|
-| <img src="media/app-recordings.png" alt="Nomily AI recordings library" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily AI transcription provider settings" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily AI LLM provider and model selection" width="200"> |
+<p align="center">
+  <img src="media/nomily-ai-app.png" alt="Nomily AI App settings showing transcription, LLM, summary, and voiceprint options" width="320">
+</p>
 
-Screens use synthetic or non-sensitive preview data. Review
-[`media/README.md`](media/README.md) before reusing product imagery or brand
-assets.
-
-### Android workflow gallery
-
-| Recording detail | ASR configuration | LLM configuration | Summary templates |
-|---|---|---|---|
-| <img src="media/screenshots/android/recording-detail.png" alt="Android recording detail with transcript and export actions" width="180"> | <img src="media/screenshots/android/asr-providers.png" alt="Android ASR provider settings with a masked key field" width="180"> | <img src="media/screenshots/android/llm-providers.png" alt="Android LLM provider configuration using placeholder values" width="180"> | <img src="media/screenshots/android/summary-templates.png" alt="Android summary templates" width="180"> |
-
-These screenshots use non-sensitive preview data. They show the Android client
-workflow and do not promise provider availability, device compatibility, or
-store release availability.
+This current App preview shows the unified Nomily experience: transcription,
+LLM, summary, and voiceprint settings. Platform-specific build instructions
+remain in the respective native-client repositories. The screen contains no API
+keys, recordings, or account data. Review [`media/README.md`](media/README.md)
+before reusing product imagery or brand assets.
 
 ## Licence
 

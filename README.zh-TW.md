@@ -227,21 +227,13 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 | 取得支援或回饋入口儲存庫問題 | 查看 [SUPPORT.md](SUPPORT.md)，或寄信至 [nomily@geekis.com](mailto:nomily@geekis.com)。 |
 | 查看條款 | 閱讀 [Nomily Small Team License](LICENSE)。 |
 
-## App 預覽
+## Nomily AI App
 
-| 錄音庫 | 轉錄服務商 | 用於摘要的 LLM 服務商 |
-|---|---|---|
-| <img src="media/app-recordings.png" alt="Nomily AI 錄音庫" width="200"> | <img src="media/app-asr-providers.png" alt="Nomily AI 轉錄服務商設定" width="200"> | <img src="media/app-llm-providers.png" alt="Nomily AI LLM 服務商和模型選擇" width="200"> |
+<p align="center">
+  <img src="media/nomily-ai-app.png" alt="Nomily AI App 設定頁，展示轉錄、LLM、摘要與聲紋選項" width="320">
+</p>
 
-截圖使用合成或非敏感預覽資料。重複使用產品圖片或品牌素材前請查看 [`media/README.md`](media/README.md)。
-
-### Android 工作流程截圖
-
-| 錄音詳情 | ASR 設定 | LLM 設定 | 摘要範本 |
-|---|---|---|---|
-| <img src="media/screenshots/android/recording-detail.png" alt="Android 錄音詳情，包含轉錄和匯出操作" width="180"> | <img src="media/screenshots/android/asr-providers.png" alt="Android ASR 服務商設定，Key 欄位已遮蔽" width="180"> | <img src="media/screenshots/android/llm-providers.png" alt="Android LLM 服務商設定，使用預留值" width="180"> | <img src="media/screenshots/android/summary-templates.png" alt="Android 摘要範本" width="180"> |
-
-這些截圖使用非敏感預覽資料，展示 Android 用戶端工作流程；不代表服務商可用性、裝置相容性或應用程式商店已發布。
+這是目前 Nomily 的統一 App 預覽，展示轉錄、LLM、摘要與聲紋設定。各平台的建置說明仍以對應的原生用戶端儲存庫為準。截圖不包含 API Key、錄音或帳戶資料；重複使用產品圖片或品牌素材前請查看 [`media/README.md`](media/README.md)。
 
 ## 授權
 
