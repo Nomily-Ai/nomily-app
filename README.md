@@ -275,14 +275,14 @@ nomily-site/      private static deployment source for guides and the demo
 
 ## Nomily AI App
 
-<p align="center">
-  <img src="media/nomily-ai-app.png" alt="Nomily AI App settings showing transcription, LLM, summary, and voiceprint options" width="320">
-</p>
+| Library | Summary | ASR configuration | LLM configuration | Settings |
+|---|---|---|---|---|
+| <img src="media/nomily-ai-home.png" alt="Nomily AI App recording library" width="150"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App recording summary" width="150"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR provider configuration" width="150"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM provider configuration with a masked API key" width="150"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App settings" width="150"> |
 
-This current App preview shows the unified Nomily experience: transcription,
-LLM, summary, and voiceprint settings. Platform-specific build instructions
-remain in the respective native-client repositories. The screen contains no API
-keys, recordings, or account data. Review [`media/README.md`](media/README.md)
+These current App previews show one unified Nomily experience: library,
+summary, ASR, LLM, and settings. Platform-specific build instructions remain in
+the respective native-client repositories. Key fields are masked and the
+screens use non-sensitive test content. Review [`media/README.md`](media/README.md)
 before reusing product imagery or brand assets.
 
 ## Licence

@@ -229,11 +229,11 @@ nomily-site/      私有靜態部署原始碼，用於指南與展示
 
 ## Nomily AI App
 
-<p align="center">
-  <img src="media/nomily-ai-app.png" alt="Nomily AI App 設定頁，展示轉錄、LLM、摘要與聲紋選項" width="320">
-</p>
+| 錄音庫 | 摘要 | ASR 設定 | LLM 設定 | 設定 |
+|---|---|---|---|---|
+| <img src="media/nomily-ai-home.png" alt="Nomily AI App 錄音庫" width="150"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App 錄音摘要" width="150"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR 服務商設定" width="150"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM 服務商設定，API Key 已遮蔽" width="150"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App 設定頁" width="150"> |
 
-這是目前 Nomily 的統一 App 預覽，展示轉錄、LLM、摘要與聲紋設定。各平台的建置說明仍以對應的原生用戶端儲存庫為準。截圖不包含 API Key、錄音或帳戶資料；重複使用產品圖片或品牌素材前請查看 [`media/README.md`](media/README.md)。
+這些目前的 App 預覽展示統一的 Nomily 體驗：錄音庫、摘要、ASR、LLM 與設定。各平台的建置說明仍以對應的原生用戶端儲存庫為準。Key 欄位已遮蔽，截圖使用非敏感測試內容；重複使用產品圖片或品牌素材前請查看 [`media/README.md`](media/README.md)。
 
 ## 授權
 

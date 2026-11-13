@@ -230,11 +230,11 @@ nomily-site/      私有静态部署源码，用于指南与演示
 
 ## Nomily AI App
 
-<p align="center">
-  <img src="media/nomily-ai-app.png" alt="Nomily AI App 设置页，展示转录、LLM、摘要与声纹选项" width="320">
-</p>
+| 录音库 | 摘要 | ASR 配置 | LLM 配置 | 设置 |
+|---|---|---|---|---|
+| <img src="media/nomily-ai-home.png" alt="Nomily AI App 录音库" width="150"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App 录音摘要" width="150"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR 服务商配置" width="150"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM 服务商配置，API Key 已遮蔽" width="150"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App 设置页" width="150"> |
 
-这是当前 Nomily 的统一 App 预览，展示转录、LLM、摘要与声纹设置。各平台的构建说明仍以对应的原生客户端仓库为准。截图不包含 API Key、录音或账户数据；复用产品图片或品牌素材前请查看 [`media/README.md`](media/README.md)。
+这些当前 App 预览展示统一的 Nomily 体验：录音库、摘要、ASR、LLM 与设置。各平台的构建说明仍以对应的原生客户端仓库为准。Key 字段已遮蔽，截图使用非敏感测试内容；复用产品图片或品牌素材前请查看 [`media/README.md`](media/README.md)。
 
 ## 许可
 
