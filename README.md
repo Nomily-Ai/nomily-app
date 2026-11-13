@@ -218,7 +218,27 @@ and `11434` only when the corresponding service is running.
 See the expandable [device compatibility matrix](media/devices/README.md)
 before assuming a recorder model is supported.
 
+## Nomily AI App
+
+| Library | Summary | Mind Map | ASR configuration | LLM configuration | Settings |
+|---|---|---|---|---|---|
+| <img src="media/nomily-ai-home.png" alt="Nomily AI App recording library" width="120"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App recording summary" width="120"> | <img src="media/nomily-ai-mind-map.png" alt="Nomily AI App mind map built from a meeting" width="120"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR provider configuration using a LAN IP placeholder" width="120"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM provider configuration with a masked API key" width="120"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App settings" width="120"> |
+
+These current App previews make the full workflow visible: library, summary,
+Mind Map, ASR, LLM, and settings. Platform-specific build instructions remain
+in the respective native-client repositories. Key fields are masked and the
+screens use non-sensitive test content. Review [`media/README.md`](media/README.md)
+before reusing product imagery or brand assets.
+
 ## Apple Watch companion
+
+### Watch preview
+
+| Watch library | Recap | Recording |
+|---|---|---|
+| <img src="media/nomily-watch-home.png" alt="Nomily Apple Watch recording library" width="220"> | <img src="media/nomily-watch-recap.png" alt="Nomily Apple Watch recap with key points" width="220"> | <img src="media/nomily-watch-recording.png" alt="Nomily Apple Watch recording in progress" width="220"> |
+
+These Apple Watch previews use English, non-sensitive demo content.
 
 After Nomily AI is installed on the paired iPhone, install its Watch companion:
 
@@ -272,18 +292,6 @@ nomily-site/      private static deployment source for guides and the demo
 | Report a defect | Open an issue in the affected native-client repository with redacted reproduction steps. |
 | Need support or have a project-entry question | Read [SUPPORT.md](SUPPORT.md) or email [nomily@geekis.com](mailto:nomily@geekis.com). |
 | Review terms | Read the [Nomily Small Team License](LICENSE). |
-
-## Nomily AI App
-
-| Library | Summary | ASR configuration | LLM configuration | Settings |
-|---|---|---|---|---|
-| <img src="media/nomily-ai-home.png" alt="Nomily AI App recording library" width="150"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App recording summary" width="150"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR provider configuration" width="150"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM provider configuration with a masked API key" width="150"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App settings" width="150"> |
-
-These current App previews show one unified Nomily experience: library,
-summary, ASR, LLM, and settings. Platform-specific build instructions remain in
-the respective native-client repositories. Key fields are masked and the
-screens use non-sensitive test content. Review [`media/README.md`](media/README.md)
-before reusing product imagery or brand assets.
 
 ## Licence
 

@@ -4,11 +4,15 @@ The screenshots in this directory are App previews for the Nomily App repository
 
 Product photography, screenshots, logos, product names, and other brand assets in this directory are not covered by the repository's source-code license. Their inclusion does not grant trademark or commercial reuse rights.
 
-`nomily-ai-home.png`, `nomily-ai-summary.png`, `nomily-ai-asr.png`,
-`nomily-ai-llm.png`, and `nomily-ai-settings.png` are the current unified
-App-preview screenshots used by the project README. They cover the library,
-summary, ASR, LLM, and settings flows. Key fields are masked; the library and
-summary use non-sensitive test content.
+`nomily-ai-home.png`, `nomily-ai-summary.png`, `nomily-ai-mind-map.png`,
+`nomily-ai-asr.png`, `nomily-ai-llm.png`, and `nomily-ai-settings.png` are the
+current unified App-preview screenshots used by the project README. They cover
+the library, summary, Mind Map, ASR, LLM, and settings flows. Key fields are
+masked; the library, summary, and Mind Map use non-sensitive test content.
+
+`nomily-watch-home.png`, `nomily-watch-recap.png`, and
+`nomily-watch-recording.png` are English, non-sensitive Apple Watch previews
+for the library, recap, and in-progress recording states.
 
 `apple-watch-recording.png` shows the English Nomily Apple Watch recording
 screen. `apple-watch-settings.png` shows Nomily settings with Apple Watch

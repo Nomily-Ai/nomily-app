@@ -178,7 +178,23 @@ hostname -I
 
 在假定某个录音器已被支持前，请先查看可扩展的[设备兼容矩阵](media/devices/README.md)。
 
+## Nomily AI App
+
+| 录音库 | 摘要 | 思维导图 | ASR 配置 | LLM 配置 | 设置 |
+|---|---|---|---|---|---|
+| <img src="media/nomily-ai-home.png" alt="Nomily AI App 录音库" width="120"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App 录音摘要" width="120"> | <img src="media/nomily-ai-mind-map.png" alt="Nomily AI App 根据会议生成的思维导图" width="120"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR 服务商配置，使用局域网 IP 占位符" width="120"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM 服务商配置，API Key 已遮蔽" width="120"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App 设置页" width="120"> |
+
+这些当前 App 预览完整展示 Nomily 的流程：录音库、摘要、思维导图、ASR、LLM 与设置。各平台的构建说明仍以对应的原生客户端仓库为准。Key 字段已遮蔽，截图使用非敏感测试内容；复用产品图片或品牌素材前请查看 [`media/README.md`](media/README.md)。
+
 ## Apple Watch 伴侣
+
+### Watch 预览
+
+| Watch 录音库 | Recap 摘要 | 录制中 |
+|---|---|---|
+| <img src="media/nomily-watch-home.png" alt="Nomily Apple Watch 录音库" width="220"> | <img src="media/nomily-watch-recap.png" alt="Nomily Apple Watch 的 Recap 摘要与关键点" width="220"> | <img src="media/nomily-watch-recording.png" alt="Nomily Apple Watch 正在录制" width="220"> |
+
+这些 Apple Watch 预览均使用英文的非敏感演示内容。
 
 在配对 iPhone 安装 Nomily AI 后，按以下方式安装 Watch 伴侣：
 
@@ -227,14 +243,6 @@ nomily-site/      私有静态部署源码，用于指南与演示
 | 报告缺陷 | 在受影响的原生客户端仓库创建 Issue，并提供脱敏后的复现步骤。 |
 | 获取支持或反馈入口仓问题 | 查看 [SUPPORT.md](SUPPORT.md)，或发送邮件至 [nomily@geekis.com](mailto:nomily@geekis.com)。 |
 | 查看条款 | 阅读 [Nomily Small Team License](LICENSE)。 |
-
-## Nomily AI App
-
-| 录音库 | 摘要 | ASR 配置 | LLM 配置 | 设置 |
-|---|---|---|---|---|
-| <img src="media/nomily-ai-home.png" alt="Nomily AI App 录音库" width="150"> | <img src="media/nomily-ai-summary.png" alt="Nomily AI App 录音摘要" width="150"> | <img src="media/nomily-ai-asr.png" alt="Nomily AI App ASR 服务商配置" width="150"> | <img src="media/nomily-ai-llm.png" alt="Nomily AI App LLM 服务商配置，API Key 已遮蔽" width="150"> | <img src="media/nomily-ai-settings.png" alt="Nomily AI App 设置页" width="150"> |
-
-这些当前 App 预览展示统一的 Nomily 体验：录音库、摘要、ASR、LLM 与设置。各平台的构建说明仍以对应的原生客户端仓库为准。Key 字段已遮蔽，截图使用非敏感测试内容；复用产品图片或品牌素材前请查看 [`media/README.md`](media/README.md)。
 
 ## 许可
 
